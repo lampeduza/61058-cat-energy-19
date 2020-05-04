@@ -38,6 +38,7 @@
     content: "";
     display: block;
     background-color: $bg-leaf;
+    background-size: 50px 50px;
     position: absolute;
     top: -2px;
     left: 1px;
@@ -52,7 +53,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/mobile/advantage-leaf@2x.png");
-      background-size: 60px 60px;
+      background-size: 50px 50px;
     }
   }
 
@@ -63,7 +64,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/mobile/advantage-powder@2x.png");
-      background-size: 60px 60px;
     }
   }
 
