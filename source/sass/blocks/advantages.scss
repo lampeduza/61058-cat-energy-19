@@ -52,6 +52,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/mobile/advantage-leaf@2x.png");
+      background-size: 60px 60px;
     }
   }
 
@@ -62,6 +63,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/mobile/advantage-powder@2x.png");
+      background-size: 60px 60px;
     }
   }
 
