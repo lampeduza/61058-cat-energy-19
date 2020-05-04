@@ -74,8 +74,10 @@
   position: relative;
 
   &--slim {
-    margin-top: 11px;
-    margin-bottom: 29px;
+    min-height: 57px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   &--strong {

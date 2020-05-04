@@ -4,7 +4,7 @@
   background-size: 320px 305px, 100% 305px;
   background-position: center 0;
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/mobile/index-background-mobile@2x.jpg");
   }
 }
@@ -117,7 +117,7 @@
     margin-bottom: 52px;
     padding: 27px 0;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/desktop/index-background-desktop@2x.jpg");
     }
   }
