@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марк Леммер](https://up.htmlacademy.ru/adaptive/19/user/61058).
-* Наставник: `Неизвестно`.
+* Наставник: `Маргарита Попова`.
 
 ---
 

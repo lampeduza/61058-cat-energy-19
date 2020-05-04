@@ -1,0 +1,29 @@
+.information__field,
+.information__value {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $light-dark-colour;
+  padding: 0;
+}
+
+.information__field {
+  text-align: left;
+  align-self: flex-start;
+}
+
+.information__value {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .product__item-information-row {
+    border-bottom: 1px solid $borderOfProduct;
+  }
+
+  .information__field,
+  .information__value {
+    font-size: 16px;
+    padding: 10px 0 6px 0;
+  }
+}

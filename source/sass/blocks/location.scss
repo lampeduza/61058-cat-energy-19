@@ -1,0 +1,136 @@
+.location {
+  padding-top: 28px;
+
+  &--gray {
+    background-color: $bg-footer-colour;
+  }
+
+  &--gray-index {
+    background-color: $white-colour;
+  }
+}
+
+.location__wrapper {
+  padding: 0 20px;
+}
+
+.location__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 26px;
+}
+
+.location__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 124px;
+}
+
+.location__address {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  color: $light-dark-colour;
+  width: 139px;
+}
+
+.location__picture {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.location__picture-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .location {
+    padding-top: 59px;
+  }
+
+  .location__wrapper {
+    padding: 0 40px;
+  }
+
+  .location__row {
+    margin-bottom: 56px;
+  }
+
+  .location__slogan {
+    font-size: 20px;
+    line-height: 25px;
+    width: 154px;
+  }
+
+  .location__address {
+    font-size: 16px;
+    width: 155px;
+    text-align: right;
+  }
+
+  .location__city {
+    display: block;
+    margin-top: 18px;
+  }
+
+  .location__picture {
+    width: 100%;
+  }
+
+  .location__picture-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    padding-top: 0;
+    margin: 0 auto;
+    position: relative;
+    background-color: $white-colour;
+    overflow: hidden;
+
+    &--gray {
+      background-color: $bg-footer-colour;
+    }
+  }
+
+  .location__wrapper {
+    padding: 0;
+  }
+
+  .location__row {
+    padding: 65px 90px 58px 76px;
+    margin-bottom: 0;
+    position: absolute;
+    background-color: $white-colour;
+    top: 95px;
+    left: 40px;
+  }
+
+  .location__slogan {
+    margin-right: 95px;
+  }
+
+  .location__address {
+    text-align: left;
+  }
+
+  .location__picture {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .location__picture-image {
+    width: 100%;
+    height: 400px;
+  }
+}

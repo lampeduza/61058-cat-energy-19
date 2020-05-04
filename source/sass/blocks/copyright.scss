@@ -1,0 +1,47 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $light-dark-colour;
+
+  &:active,
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.copyright__link-image {
+
+  margin-right: -7px;
+}
+
+.copyright__link-image svg {
+  width: 41px;
+  height: auto;
+}
+
+.copyright__link-image:hover svg {
+  fill: $bg-leaf;
+}
+
+.copyright__link-image:active svg,
+.copyright__link-image:focus svg {
+  fill: $bg-leaf;
+  opacity: .3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+  }
+
+  .copyright__link {
+    margin-right: 15px;
+  }
+}

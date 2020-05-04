@@ -1,0 +1,42 @@
+.page-main__title {
+  margin: 0;
+  margin-top: 15px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ededed;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+  &--form {
+    padding: 0 0 0 20px;
+    margin-bottom: 25px;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 auto 164px auto;
+    padding: 0;
+    max-width: 708px;
+
+    &--form {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    border: none;
+    max-width: 1220px;
+    margin: 0 auto 165px auto;
+
+    &--form {
+      margin-bottom: 57px;
+    }
+  }
+}
