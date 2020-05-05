@@ -1,6 +1,7 @@
 .field {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .field__input {
@@ -29,12 +30,12 @@
 
 .field__input-mail {
   position: absolute;
-  right: 35px;
+  right: 15px;
 }
 
 .field__input-phone {
   position: absolute;
-  right: 32px;
+  right: 12px;
 }
 
 .form__item-input::placeholder {
@@ -50,17 +51,17 @@
   color: $bg-toggle;
 
   &--name {
-    margin-right: 13px;
+    margin-right: 14px;
   }
 
   &--weight {
-    width: 91px;
-    margin-right: 15px;
+    width: 89px;
+    margin-right: 14px;
   }
 
   &--age {
-    width: 180px;
-    margin-right: 13px;
+        width: 165px;
+    margin-right: 14px;
   }
 
   &--mail {
@@ -75,8 +76,8 @@
   &--additional-info {
     position: relative;
     padding-left: 46px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
 }
 
@@ -159,7 +160,6 @@
   opacity: .3;
 }
 
-
 .field__radio:disabled + .field__label-goal {
   color: rgba(34, 34, 34, 0.3);
 }
@@ -172,4 +172,128 @@
 .field__radio:checked:disabled + .field__label-goal::after {
   background-color: $bg-leaf;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .field__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--name {
+      margin-right: 17px;
+    }
+
+    &--weight {
+      width: 92px;
+      margin-right: 17px;
+    }
+
+    &--age {
+      width: 155px;
+      margin-right: 17px;
+    }
+
+    &--mail {
+      width: 77px;
+      margin-right: 16px;
+    }
+
+    &--number {
+      margin-right: 14px;
+    }
+
+    &--additional-info {
+      padding-left: 59px;
+    }
+  }
+
+  .field__label-goal {
+    padding-left: 88px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .field__input {
+    height: 52px;
+    padding: 15px 35px 16px 19px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--contact-data {
+      padding: 12px 40px 17px 18px;
+    }
+  }
+
+  .field__input::placeholder{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field__radio + .field__label-goal::before {
+    width: 40px;
+    height: 40px;
+    left: 28px;
+  }
+
+  .field__radio:checked + .field__label-goal::after {
+    left: 39px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .field__checkbox + .field__label--additional-info::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .field__checkbox:checked + .field__label--additional-info::after {
+    top: 19px;
+    left: 9px;
+    width: 21px;
+    height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field__label {
+    &--weight {
+      width: 92px;
+    }
+
+    &--age {
+      width: 159px;
+    }
+
+    &--mail {
+      width: 67px;
+      margin-right: 17px;
+    }
+
+    &--number {
+      margin-right: 17px;
+    }
+  }
+
+  .field__option {
+    &--data {
+      margin-bottom: 0;
+      width: 570px;
+    }
+  }
+
+  .field__input-mail {
+    position: absolute;
+    right: 19px;
+  }
+
+  .field__input-phone {
+    position: absolute;
+    right: 18px;
+  }
+
+  .field__input {
+    &--contact-data {
+      width: 486px;
+    }
+  }
 }
