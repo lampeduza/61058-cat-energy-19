@@ -11,11 +11,20 @@
   margin-bottom: 20px;
   padding: 19px 20px 20px 20px;
 
-  position: relative;
-
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.offers__title {
+  margin: 0;
+  margin-bottom: 28px;
+  padding-left: 72px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  position: relative;
 
   &::before,
   &::after {
@@ -29,13 +38,15 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    left: 22px;
-    top: 25px;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &::after {
-    top: 0;
-    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
     background-repeat: no-repeat;
   }
 
@@ -44,8 +55,6 @@
     background-size: 35px 49px;
     width: 35px;
     height: 49px;
-    top: 22px;
-    left: 30px;
   }
 
   &--strong::after {
@@ -53,26 +62,8 @@
     background-size: 67px 28px;
     width: 67px;
     height: 28px;
-    top: 36px;
-    left: 13px;
+    left: -7px;
   }
-}
-
-.offers__item--strong::before {
-  left: 22px;
-  top: 25px;
-}
-
-.offers__title {
-  margin: 0;
-  margin-bottom: 28px;
-  padding-left: 72px;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 37px;
-  text-transform: uppercase;
-  position: relative;
-
   &--slim {
     min-height: 57px;
     display: flex;
@@ -157,38 +148,9 @@
   .offers__item {
     padding: 65px 275px 62px 53px;
     margin-bottom: 30px;
-    position: relative;
 
     &--strong {
       padding-top: 76px;
-    }
-
-    &::before {
-      left: 446px;
-      top: 92px;
-      width: 200px;
-      height: 200px;
-    }
-
-    &--strong::before {
-      left: 448px;
-      top: 91px;
-    }
-
-    &--slim::after {
-      background-size: 141px 194px;
-      width: 141px;
-      height: 194px;
-      top: 80px;
-      left: 475px;
-    }
-
-    &--strong::after {
-      background-size: 268px 113px;
-      width: 268px;
-      height: 113px;
-      top: 134px;
-      left: 412px;
     }
   }
 
@@ -197,15 +159,39 @@
     font-size: 36px;
     line-height: 37px;
     margin-bottom: 16px;
+    position: relative;
 
     &--strong {
       margin-top: 0;
       margin-bottom: 25px;
     }
 
-    &::after,
     &::before {
-      display: none;
+      left: 393px;
+      top: 127px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--strong::before {
+      left: 395px;
+      top: 115px;
+    }
+
+    &--slim::after {
+      background-size: 141px 194px;
+      width: 141px;
+      height: 194px;
+      top: 112px;
+      left: 423px;
+    }
+
+    &--strong::after {
+      background-size: 268px 113px;
+      width: 268px;
+      height: 113px;
+      top: 115px;
+      left: 359px;
     }
   }
 
@@ -262,25 +248,6 @@
     padding: 66px 50px 62px 50px;
     margin-bottom: 0;
 
-    &::before {
-      width: 100px;
-      height: 100px;
-      top: 46px;
-      left: 52px;
-    }
-
-    &--slim::after {
-      background-size: 71px 97px;
-      top: 38px;
-      left: 65px;
-    }
-
-    &--strong::after {
-      background-size: 134px 57px;
-      top: 66px;
-      left: 34px;
-    }
-
     &--strong {
       padding-top: 75px;
     }
@@ -294,8 +261,31 @@
   .offers__title {
     margin-bottom: 64px;
 
-    &--strong {
-      margin-bottom: 75px;
+   &--strong {
+      margin-bottom: 76px;
+    }
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 31px;
+      left: -162px;
+    }
+
+    &--strong::before {
+      top: 22px;
+    }
+
+    &--slim::after {
+      background-size: 71px 97px;
+      top: 72px;
+      left: -149px;
+    }
+
+    &--strong::after {
+      background-size: 134px 57px;
+      top: 50px;
+      left: -180px;
     }
   }
 

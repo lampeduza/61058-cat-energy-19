@@ -41,7 +41,7 @@
     background-size: 50px 50px;
     position: absolute;
     top: -2px;
-    left: 1px;
+    left: 0;
     width: 60px;
     height: 60px;
   }
@@ -108,19 +108,23 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     counter-reset: myCounter;
   }
 
   .advantages__item {
-    width: 324px;
+    width: 246px;
     min-height: 228px;
     font-size: 16px;
     line-height: 24px;
     padding: 0;
-    padding: 110px 59px 0 0;
+    padding: 110px 0 0 0;
+    margin-right: 138px;
     margin-bottom: 89px;
     position: relative;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
 
     &:nth-child(3),
     &:nth-child(4) {
@@ -136,23 +140,24 @@
       color: $bg-footer-colour;
       position: absolute;
       top: -41px;
+      right: 16px;
       z-index: -1;
     }
 
     &--leaf::before {
-      right: 95px;
+      right: 16px;
     }
 
     &--powder::before {
-      right: 79px;
+      right: 0;
     }
 
     &--cutlery::before {
-      right: 77px;
+      right: -1px;
     }
 
     &--clock::before {
-      right: 75px;
+      right: -3px;
     }
 
     &::after {
@@ -167,6 +172,7 @@
 @media (min-width: $desktop-width) {
   .advantages {
     padding: 28px 0 0 0;
+    border-bottom: 0;
   }
 
   .advantages__title {
@@ -177,7 +183,16 @@
     font-size: 16px;
     width: 245px;
     padding: 110px 0 0 0;
+    margin-right: 80px;
     margin-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &--leaf::before {
       right: 16px;
