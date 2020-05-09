@@ -1,4 +1,3 @@
-
 var pageHeader = document.querySelector('.page-header');
 var pageHeaderToggle = document.querySelector('.page-header__toggle');
 

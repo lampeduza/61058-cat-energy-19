@@ -1,14 +1,20 @@
 .social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 23px;
-  padding-bottom: 19px;
-  position: relative;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
   margin-bottom: 19px;
+  padding-top: 23px;
+  padding-bottom: 19px;
+  display: flex;
+  justify-content: center;
+}
+
+.social__list {
+  @include reset-list;
+  width: 125px;
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .social__item {
@@ -35,8 +41,15 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social__list {
     padding: 0;
     margin-bottom: 0;
+    margin-left: 19px;
     border: none;
 
     &::before,

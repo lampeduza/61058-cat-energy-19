@@ -73,7 +73,7 @@
   }
 }
 
-.page-header--opened .main-navigation {
+.page-header--opened .navigation {
   display: block;
 }
 
@@ -81,7 +81,7 @@
   display: none;
 }
 
-.page-header--no-js .main-navigation {
+.page-header--no-js .navigation {
   display: block;
   position: static;
 }

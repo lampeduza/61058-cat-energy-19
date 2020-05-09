@@ -4,8 +4,11 @@
   padding-bottom: 35px;
 }
 
-.example__title {
+.example__wrapper {
   padding: 0 20px;
+}
+
+.example__title {
   margin: 0;
   margin-bottom: 23px;
   font-size: 36px;
@@ -14,16 +17,12 @@
 }
 
 .example__text {
-  padding: 0 21px 0 20px;
+  padding-right: 13px;
   margin: 0;
   margin-bottom: 25px;
   color: $light-dark-colour;
   font-family: "Arial", sans-serif;
   line-height: 18px;
-}
-
-.example__statistics {
-  padding: 0 20px;
 }
 
 .example__list {
@@ -79,6 +78,7 @@
   width: 320px;
   height: 240px;
   margin: 0 auto;
+  margin-left: -20px;
   position: relative;
 }
 
