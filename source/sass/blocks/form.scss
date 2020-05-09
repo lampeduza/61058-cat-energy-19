@@ -12,14 +12,11 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
-/* временно */
-margin-bottom: 39px;
+  margin-bottom: 39px;
 }
 
 .form__item {
   padding: 0;
-  margin: 0;
   margin: 19px 0;
   border: none;
 
@@ -81,7 +78,7 @@ margin-bottom: 39px;
   }
 
   &--additional-info::after {
-    top: 15px
+    top: 15px;
   }
 }
 
@@ -90,7 +87,6 @@ margin-bottom: 39px;
   line-height: 24px;
   margin-bottom: 36px;
   display: inline-block;
-
   position: relative;
   background-color: $white-colour;
   width: 142px;
@@ -196,7 +192,6 @@ margin-bottom: 39px;
     }
 
     &--goal {
-      padding: 0;
       margin: 0;
       margin-bottom: 75px;
       border: 1px solid $borderOfProduct;
@@ -204,8 +199,7 @@ margin-bottom: 39px;
     }
 
     &--contact-data {
-      margin: 0;
-      margin-bottom: 65px;
+      margin: 0 0 65px 0;
     }
 
     &--additional-info {
@@ -289,8 +283,15 @@ margin-bottom: 39px;
   }
 
   .form__comment-aria {
+    font-size: 20px;
+    line-height: 20px;
     height: 174px;
     padding: 14px 13px 15px 18px;
+  }
+
+  .form__comment-aria::placeholder {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form__item-option {
@@ -334,21 +335,11 @@ margin-bottom: 39px;
     margin-right: 62px;
   }
 
-  .form__comment-aria {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .form__required-field {
     font-size: 16px;
     margin: 0;
     margin-top: -4px;
     width: auto;
-  }
-
-  .form__comment-aria::placeholder {
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 
@@ -391,7 +382,6 @@ margin-bottom: 39px;
 
   .form__item-title,
   .form__comment-title {
-
     &::before {
       left: -1000px;
     }
@@ -409,7 +399,6 @@ margin-bottom: 39px;
   }
 
   .form__item-option {
-
     &--data {
       margin-bottom: 0;
       margin-right: 78px;

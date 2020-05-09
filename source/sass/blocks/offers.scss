@@ -64,6 +64,7 @@
     height: 28px;
     left: -7px;
   }
+
   &--slim {
     min-height: 57px;
     display: flex;
@@ -132,7 +133,7 @@
 
   &:active,
   &:focus {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -219,15 +220,14 @@
     }
 
     &:hover::after {
-    right: 1px;
+      right: 1px;
+    }
 
-  }
-
-  &:active::after,
-  &:focus::after {
-    opacity: 0.3;
-    right: 1px;
-  }
+    &:active::after,
+    &:focus::after {
+      opacity: 0.3;
+      right: 1px;
+    }
   }
 }
 
@@ -261,7 +261,7 @@
   .offers__title {
     margin-bottom: 64px;
 
-   &--strong {
+    &--strong {
       margin-bottom: 76px;
     }
 

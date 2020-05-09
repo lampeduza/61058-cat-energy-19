@@ -6,15 +6,14 @@
   min-height: 306px;
   padding-top: 27px;
   margin: 0 -20px 0 -20px;
-
-   background-image: url("../img/mobile/index-background-mobile@x1.jpg"), linear-gradient(0, #64a83b, 100%, #64a83b);
+  background-image: url("../img/mobile/index-background-mobile@x1.jpg"), linear-gradient(0, #64a83b, 100%, #64a83b);
   background-repeat: no-repeat;
   background-size: 320px 305px, 100% 305px;
   background-position: center 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/mobile/index-background-mobile@2x.jpg");
-      background-size: 100% auto;
+    background-image: url("../img/mobile/index-background-mobile@2x.jpg");
+    background-size: 100% auto;
   }
 }
 

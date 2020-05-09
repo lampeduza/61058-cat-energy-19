@@ -59,7 +59,7 @@
     width: 31px;
     height: 31px;
     background-color: white;
-    background-image: url(../img/icons/icon-plus.svg);
+    background-image: url("../img/icons/icon-plus.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 31px 31px;
@@ -224,10 +224,6 @@
     padding: 0;
     width: auto;
     font-size: 20px;
-
-    &--other {
-
-    }
   }
 
   .product__item-information-list {
@@ -283,7 +279,7 @@
 
   .product__item:nth-child(odd) .product__link {
     margin-top: -45px;
-}
+  }
 
   .product__image {
     width: 245px;

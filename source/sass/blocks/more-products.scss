@@ -88,7 +88,7 @@
   padding-bottom: 42px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/mobile/gift-photo-mobile@2x.jpg");
+    background-image: url("/img/mobile/gift-photo-mobile@2x.jpg");
   }
 }
 
@@ -150,7 +150,7 @@
     line-height: 36px;
     margin-bottom: 80px;
     margin-left: -2px;
-    padding: 0px 36px 0 39px;
+    padding: 0 36px 0 39px;
 
     &::before,
     &::after {
@@ -219,7 +219,7 @@
     padding-top: 72px;
     padding-bottom: 69px;
 
-     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/tablet/gift-photo-tablet@2x.jpg");
     }
   }

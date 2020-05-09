@@ -60,7 +60,7 @@
   }
 
   &--age {
-        width: 165px;
+    width: 165px;
     margin-right: 14px;
   }
 
@@ -94,7 +94,7 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  left: 0px;
+  left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid $borderOfProduct;
@@ -117,7 +117,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0px;
+  left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid $borderOfProduct;
@@ -149,7 +149,7 @@
 .field__radio + .field__label:focus::before,
 .field__checkbox + .field__label:focus::before {
   border-color: #bababa;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .field__radio:active + .field__label,
@@ -157,7 +157,7 @@
 .field__checkbox:active + .field__label,
 .field__checkbox:focus + .field__label {
   color: rgba(34, 34, 34, 0.3);
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .field__radio:disabled + .field__label-goal {
@@ -224,7 +224,7 @@
     }
   }
 
-  .field__input::placeholder{
+  .field__input::placeholder {
     font-size: 20px;
     line-height: 20px;
   }
