@@ -37,13 +37,13 @@
   }
 
   &--additional-info {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 }
 
 .form__comment {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   display: flex;
   flex-direction: column;
 }
@@ -51,7 +51,7 @@
 .form__item-title {
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   display: inline-block;
 
   position: relative;
@@ -86,7 +86,7 @@
 .form__comment-title {
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   display: inline-block;
   position: relative;
   background-color: $white-colour;
