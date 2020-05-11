@@ -1,5 +1,5 @@
 .example {
-  background-color: $bg-footer-colour;
+  background-color: $bg-footer;
   padding-top: 17px;
   padding-bottom: 35px;
 }
@@ -20,7 +20,7 @@
   padding-right: 13px;
   margin: 0;
   margin-bottom: 25px;
-  color: $light-dark-colour;
+  color: $light-dark;
   font-family: "Arial", sans-serif;
   line-height: 18px;
 }
@@ -56,8 +56,8 @@
   line-height: 12px;
   text-align: center;
   text-transform: lowercase;
-  color: $light-dark-colour;
-  background-color: $bg-footer-colour;
+  color: $light-dark;
+  background-color: $bg-footer;
   position: absolute;
   top: 46px;
   left: 17px;
@@ -107,7 +107,7 @@
   line-height: 20px;
   text-transform: uppercase;
   border: none;
-  background-color: $bg-footer-colour;
+  background-color: $bg-footer;
 }
 
 .example__before {
@@ -204,7 +204,7 @@
     line-height: 14px;
     top: 62px;
     padding: 0 9px 0 8px;
-    background-color: $white-colour;
+    background-color: $white;
 
     &--weight {
       width: 114px;
@@ -286,7 +286,7 @@
     border: 1px solid #cdcdcd;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     border-radius: 50%;
-    background-color: $white-colour;
+    background-color: $white;
     top: -14px;
     left: 197px;
 
@@ -361,7 +361,7 @@
   }
 
   .example__item-text {
-    background-color: $bg-footer-colour;
+    background-color: $bg-footer;
   }
 
   .example__cost {

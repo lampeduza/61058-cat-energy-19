@@ -21,7 +21,7 @@
 .advantages__item {
   font-family: "Arial", sans-serif;
   line-height: 18px;
-  color: $light-dark-colour;
+  color: $light-dark;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +136,7 @@
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
       line-height: 281px;
-      color: $bg-footer-colour;
+      color: $bg-footer;
       position: absolute;
       top: -41px;
       right: 16px;

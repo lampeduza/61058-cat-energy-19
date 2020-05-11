@@ -14,7 +14,7 @@
   padding-right: 22px;
   display: inline-block;
   vertical-align: top;
-  background-color: $white-colour;
+  background-color: $white;
   position: relative;
   font-size: 24px;
   line-height: 24px;
@@ -66,7 +66,7 @@
 .more-products__item-amount,
 .more-products__item-value {
   font-family: "Arial", sans-serif;
-  color: $light-dark-colour;
+  color: $light-dark;
 }
 
 .more-products__item-value {
@@ -99,7 +99,7 @@
   line-height: 20px;
   text-align: center;
   margin: 0 auto;
-  color: $white-colour;
+  color: $white;
 
   position: relative;
 }

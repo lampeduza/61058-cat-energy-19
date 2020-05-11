@@ -2,11 +2,11 @@
   padding-top: 28px;
 
   &--gray {
-    background-color: $bg-footer-colour;
+    background-color: $bg-footer;
   }
 
   &--gray-index {
-    background-color: $white-colour;
+    background-color: $white;
   }
 }
 
@@ -33,7 +33,7 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   line-height: 20px;
-  color: $light-dark-colour;
+  color: $light-dark;
   width: 139px;
 }
 
@@ -100,11 +100,11 @@
     padding-top: 0;
     margin: 0 auto;
     position: relative;
-    background-color: $white-colour;
+    background-color: $white;
     overflow: hidden;
 
     &--gray {
-      background-color: $bg-footer-colour;
+      background-color: $bg-footer;
     }
   }
 
@@ -116,7 +116,7 @@
     padding: 65px 90px 58px 76px;
     margin-bottom: 0;
     position: absolute;
-    background-color: $white-colour;
+    background-color: $white;
     top: 95px;
     left: 40px;
   }

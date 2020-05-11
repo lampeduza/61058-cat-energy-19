@@ -21,8 +21,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: $dark-colour;
-  background-color: $white-colour;
+  color: $dark;
+  background-color: $white;
   text-transform: uppercase;
   padding: 23px 10px 22px 10px;
 
@@ -90,13 +90,13 @@
 
   .navigation__list--white .navigation__item {
     &--active {
-      border-bottom: 2px solid $white-colour;
+      border-bottom: 2px solid $white;
     }
   }
 
   .navigation__list--white .navigation__link {
     background-color: transparent;
-    color: $white-colour;
+    color: $white;
 
     &:active,
     &:focus {
