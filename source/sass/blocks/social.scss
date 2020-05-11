@@ -78,13 +78,13 @@
 
   .social__list {
     margin-bottom: 0;
-    margin-left: 19px;
     padding: 0;
+    margin-left: 27px;
     border: none;
   }
 
   .social__item {
-    margin-right: 30px;
+    margin-right: 20px;
 
     &--vk {
       .social__icon {
@@ -106,5 +106,10 @@
         height: 28px;
       }
     }
+  }
+
+  .social__link {
+    width: 30px;
+    height: 30px;
   }
 }

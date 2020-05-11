@@ -79,3 +79,50 @@
 .control__input:checked ~ .control__label::after {
   opacity: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .control {
+    &--radio {
+      .control__label {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 88px;
+        &::before {
+          width: 40px;
+          height: 40px;
+          left: 27px;
+        }
+
+        &::after {
+          top: 10px;
+          left: 38px;
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    &--checkbox {
+      .control__label {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 58px;
+        &::before {
+          width: 40px;
+          height: 40px;
+        }
+
+        &::after {
+          top: 10px;
+          left: 9px;
+          width: 22px;
+          height: 17px;
+          background-image: url("../img/icons/icon-tick.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

@@ -46,14 +46,13 @@
 .field__input {
   width: 100%;
   height: 45px;
-  padding: 14px 35px 14px 14px;
+  padding: 14px 40px 14px 14px;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   color: $light-dark-colour;
   outline: none;
   border: 1px solid $borderOfProduct;
-  padding-right: 50px;
 
   &:hover {
     border: 1px solid $borderOfProduct;
@@ -63,9 +62,6 @@
   &:focus {
     border: 1px solid $light-dark-colour;
   }
-
-  &::placeholder {
-  }
 }
 
 .field__icon {
@@ -74,3 +70,41 @@
   display: block;
   transform: translate3d(0, -50%, 0);
 }
+
+@media (min-width: $tablet-width) {
+  .field {
+    &--email {
+      .field__label {
+        margin-right: 20px;
+      }
+    }
+
+    &--phone {
+      .field__label {
+        margin-right: 14px;
+      }
+    }
+  }
+
+  .field__label {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 20px;
+  }
+
+  .field__input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 18px;
+  }
+
+  .field__input::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+
+
+
