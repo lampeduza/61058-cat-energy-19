@@ -1,0 +1,81 @@
+.control {
+  &--radio {
+    .control__label {
+      &::before {
+        border-radius: 50%;
+      }
+
+      &::after {
+        top: 9px;
+        left: 9px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $bg-leaf;
+      }
+    }
+  }
+
+  &--checkbox {
+    .control__label {
+      &::after {
+        top: 6px;
+        left: 5px;
+        width: 22px;
+        height: 17px;
+        background-image: url("../img/icons/icon-tick.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.control__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.control__label {
+  position: relative;
+  display: block;
+  min-height: 30px;
+  padding-left: 46px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $borderOfProduct;
+  }
+
+  &::after {
+    opacity: 0;
+    transition: 0.2s;
+  }
+}
+
+.control__input:checked ~ .control__label::after {
+  opacity: 1;
+}

@@ -7,12 +7,13 @@
 }
 
 .form__info {
-  width: 226px;
   display: block;
+  padding-right: 20px;
+  font-size: 13.3px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .form__item {
@@ -27,12 +28,12 @@
 
   &--goal {
     margin: 0;
-    padding-bottom: 26px;
+    padding-bottom: 19px;
     border-bottom: 1px solid #ededed;
   }
 
   &--contact-data {
-    margin: 22px 0 27px 0;
+    margin: 28px 0 29px 0;
   }
 
   &--additional-info {
@@ -50,7 +51,7 @@
 .form__item-title {
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   display: inline-block;
 
   position: relative;
@@ -387,9 +388,11 @@
     }
   }
 
-  .form__item-list-data {
-    display: flex;
-    align-items: center;
+  .form__item-list {
+    &--data {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .form__item-list-additional-info {

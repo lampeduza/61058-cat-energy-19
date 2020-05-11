@@ -68,7 +68,7 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="container">
           <div class="form__wrapper">
-            <strong class="form__info">Заполните анкету и мы подберем программу питания для вашего кота</strong>
+            <p class="form__info"><strong>Заполните анкету и мы подберем программу питания для вашего кота</strong></p>
             <div class="form__top-row">
               <!-- item 1 -->
               <fieldset class="form__item form__item--basic">
@@ -76,19 +76,19 @@
                 <ul class="form__item-list">
                   <li class="form__item-option">
                     <div class="field">
-                      <label class="field__label field__label field__label--name" for="name">Имя:*</label>
+                      <label class="field__label field__label" for="name">Имя:*</label>
                       <input class="field__input" type="text" id="name" name="name" placeholder="Барсик" required>
                     </div>
                   </li>
                   <li class="form__item-option">
                     <div class="field">
-                      <label class="field__label field__label field__label--weight" for="weight">Вес (кг):*</label>
+                      <label class="field__label field__label" for="weight">Вес (кг):*</label>
                       <input class="field__input" type="text" id="weight" name="weight" placeholder="7" required>
                     </div>
                   </li>
                   <li class="form__item-option">
                     <div class="field">
-                      <label class="field__label field__label field__label--age" for="age">Возраст (лет):</label>
+                      <label class="field__label field__label" for="age">Возраст (лет):</label>
                       <input class="field__input" type="text" id="age" name="age" placeholder="7">
                     </div>
                   </li>
@@ -98,22 +98,22 @@
               <fieldset class="form__item form__item--goal">
                 <legend class="visually-hidden">Цель тренировок</legend>
                 <ul class="form__item-list">
-                  <li class="form__item-option form__item-option--goal">
-                    <div class="field">
-                      <input class="field__radio visually-hidden" type="radio" id="weight-loss" name="weight" value="weight-loss" checked>
-                      <label class="field__label field__label-goal" for="weight-loss">Похудение</label>
+                  <li class="form__item-option form__item-option--radio">
+                    <div class="control control--radio">
+                      <input class="control__input" type="radio" id="weight-loss" name="weight" value="weight-loss" checked>
+                      <label class="control__label" for="weight-loss">Похудение</label>
                     </div>
                   </li>
-                  <li class="form__item-option form__item-option--goal">
-                    <div class="field">
-                      <input class="field__radio visually-hidden" type="radio" id="weight-gain" name="weight" value="weight-gain">
-                      <label class="field__label field__label-goal" for="weight-gain">Набор массы</label>
+                  <li class="form__item-option form__item-option--radio">
+                    <div class="control control--radio">
+                      <input class="control__input" type="radio" id="weight-gain" name="weight" value="weight-gain">
+                      <label class="control__label" for="weight-gain">Набор массы</label>
                     </div>
                   </li>
-                  <li class="form__item-option form__item-option--goal">
-                    <div class="field">
-                      <input class="field__radio visually-hidden" type="radio" id="advice" name="weight" value="advice">
-                      <label class="field__label field__label-goal" for="advice">Не знаю (Нужен ваш совет)</label>
+                  <li class="form__item-option form__item-option--radio">
+                    <div class="control control--radio">
+                      <input class="control__input" type="radio" id="advice" name="weight" value="advice">
+                      <label class="control__label" for="advice">Не знаю (Нужен ваш совет)</label>
                     </div>
                   </li>
                 </ul>
@@ -123,21 +123,21 @@
             <!-- item 3 -->
             <fieldset class="form__item form__item--contact-data">
               <legend class="form__item-title form__item-title--contact-data">Контактные данные (владельца кота)</legend>
-              <ul class="form__item-list form__item-list-data">
+              <ul class="form__item-list form__item-list--data">
                 <li class="form__item-option form__item-option--data">
-                  <div class="field">
-                    <label class="field__label field__label--mail" for="mail">E-mail:*</label>
-                    <input class="field__input field__input--contact-data" type="text" id="mail" name="mail" placeholder="kuklachev@gmail.com" required>
-                    <svg class="field__input-mail" width="18" height="14">
+                  <div class="field field--email">
+                    <label class="field__label" for="mail">E-mail:*</label>
+                    <input class="field__input" type="text" id="mail" name="mail" placeholder="kuklachev@gmail.com" required>
+                    <svg class="field__icon" width="18" height="14">
                       <use xlink:href="#input__mail"></use>
                     </svg>
                   </div>
                 </li>
                 <li class="form__item-option form__item-option--data">
-                  <div class="field">
-                    <label class="field__label field__label--number" for="number">Телефон:*</label>
-                    <input class="field__input field__input--contact-data" type="text" id="number" name="number" placeholder="8 (960) 900-60-90" required>
-                    <svg class="field__input-phone" width="21" height="21">
+                  <div class="field field--phone">
+                    <label class="field__label" for="number">Телефон:*</label>
+                    <input class="field__input" type="text" id="number" name="number" placeholder="8 (960) 900-60-90" required>
+                    <svg class="field__icon" width="21" height="21">
                       <use xlink:href="#input__phone"></use>
                     </svg>
                   </div>
@@ -154,27 +154,27 @@
               <legend class="form__item-title form__item-title--additional-info">Дополнительно</legend>
               <ul class="form__item-list form__item-list-additional-info">
                 <li class="form__item-option form__item-option--additional-info">
-                  <div class="field">
-                    <input class="field__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
-                    <label class="field__label field__label--additional-info" for="sweetener">Сахарозаменитель</label>
+                  <div class="control control--checkbox">
+                    <input class="control__input" type="checkbox" id="sweetener" name="sweetener" checked>
+                    <label class="control__label" for="sweetener">Сахарозаменитель</label>
                   </div>
                 </li>
                 <li class="form__item-option form__item-option--additional-info">
-                  <div class="field">
-                    <input class="field__checkbox visually-hidden" type="checkbox" id="water" name="water">
-                    <label class="field__label field__label--additional-info" for="water">Питьевая вода</label>
+                  <div class="control control--checkbox">
+                    <input class="control__input" type="checkbox" id="water" name="water">
+                    <label class="control__label" for="water">Питьевая вода</label>
                   </div>
                 </li>
                 <li class="form__item-option form__item-option--additional-info">
-                  <div class="field">
-                    <input class="field__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
-                    <label class="field__label field__label--additional-info" for="milk">Молоко</label>
+                  <div class="control control--checkbox">
+                    <input class="control__input" type="checkbox" id="milk" name="milk">
+                    <label class="control__label" for="milk">Молоко</label>
                   </div>
                 </li>
                 <li class="form__item-option form__item-option--additional-info">
-                  <div class="field">
-                    <input class="field__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-                    <label class="field__label field__label--additional-info" for="vitamins">Витамины</label>
+                  <div class="control control--checkbox">
+                    <input class="control__input" type="checkbox" id="vitamins" name="vitamins">
+                    <label class="control__label" for="vitamins">Витамины</label>
                   </div>
                 </li>
               </ul>
@@ -222,22 +222,22 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item social__item--vk">
-                <a class="social__link social__link--vk" href="#" aria-label="В Вконтакте">
-                  <svg class="social__icon-vk" width="22" height="12">
+                <a class="social__link social__link" href="#" aria-label="В Вконтакте">
+                  <svg class="social__icon" width="22" height="12">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item social__item--insta">
-                <a class="social__link social__link--insta" href="#" aria-label="Инстаграм">
-                  <svg class="social__icon-insta" width="17" height="17">
+                <a class="social__link social__link" href="#" aria-label="Инстаграм">
+                  <svg class="social__icon" width="17" height="17">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item social__item--fb">
-                <a class="social__link social__link--fb" href="#" aria-label="Фейсбук">
-                  <svg class="social__icon-fb" width="10" height="19">
+                <a class="social__link social__link" href="#" aria-label="Фейсбук">
+                  <svg class="social__icon" width="10" height="19">
                   <use xlink:href="#icon-fb"></use>
                 </a>
               </li>

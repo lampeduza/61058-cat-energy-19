@@ -29,6 +29,9 @@
 
 .page-footer__social {
   @include reset-list;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,5 +54,11 @@
 
   .page-footer__copyright {
     flex-shrink: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+    border-bottom: none;
+    border-top: none;
   }
 }
