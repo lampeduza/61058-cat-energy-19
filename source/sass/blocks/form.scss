@@ -365,7 +365,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 
   .form__item {
@@ -381,7 +381,7 @@
 
     &--additional-info {
       margin-top: 0;
-      margin-bottom: 61px;
+      margin-bottom: 63px;
     }
   }
 
@@ -392,9 +392,16 @@
     }
   }
 
+  .form__item-title {
+    &--contact-data {
+      margin-bottom: 76px;
+    }
+  }
+
   .form__item-list {
     &--data {
       display: flex;
+      justify-content: space-between;
       align-items: center;
     }
   }
@@ -408,7 +415,7 @@
   .form__item-option {
     &--data {
       margin-bottom: 0;
-      margin-right: 78px;
+      min-width: 570px;
     }
 
     &:last-child {

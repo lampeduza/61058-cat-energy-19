@@ -105,6 +105,18 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .field {
+    &--email {
+      .field__icon {
+        right: 19px;
+      }
+    }
 
-
-
+    &--phone {
+      .field__icon {
+        right: 18px;
+      }
+    }
+  }
+}
