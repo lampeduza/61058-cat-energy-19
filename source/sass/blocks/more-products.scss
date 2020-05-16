@@ -26,7 +26,7 @@
     top: 14px;
     min-width: 100vw;
     height: 3px;
-    background-color: $bg-leaf;
+    background-color: $green;
     z-index: -1;
   }
 }
@@ -78,7 +78,7 @@
 }
 
 .more-products__gift {
-  background-color: $bg-colour-gift;
+  background-color: $green-2;
   background-image: url("/img/mobile/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;

@@ -27,12 +27,12 @@
 }
 
 .copyright__link-image:hover svg {
-  fill: $bg-leaf;
+  fill: $green;
 }
 
 .copyright__link-image:active svg,
 .copyright__link-image:focus svg {
-  fill: $bg-leaf;
+  fill: $green;
   opacity: 0.3;
 }
 

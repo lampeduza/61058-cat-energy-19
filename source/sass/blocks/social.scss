@@ -51,14 +51,14 @@
 
   &:hover {
     .social__icon {
-      fill: $bg-leaf;
+      fill: $green;
     }
   }
 
   &:active,
   &:focus {
     .social__icon {
-      fill: $bg-leaf;
+      fill: $green;
       opacity: 0.3;
     }
   }

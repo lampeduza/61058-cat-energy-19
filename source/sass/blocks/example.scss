@@ -127,7 +127,7 @@
 .example__toggle {
   width: 35px;
   height: 6px;
-  background-color: $bg-leaf;
+  background-color: $green;
   position: absolute;
   top: 3px;
   left: 5px;
@@ -297,7 +297,7 @@
       left: 12px;
       width: 8px;
       height: 8px;
-      background-color: $bg-leaf;
+      background-color: $green;
       border-radius: 50%;
     }
 
@@ -307,7 +307,7 @@
 
     &:active,
     &:focus {
-      border: 2px solid $bg-leaf;
+      border: 2px solid $green;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
 
