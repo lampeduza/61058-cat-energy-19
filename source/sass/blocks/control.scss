@@ -13,6 +13,16 @@
         border-radius: 50%;
         background-color: $green;
       }
+
+      &:hover::before {
+        border-color: $radio-border;
+      }
+
+      &:active::before,
+      &:focus::before {
+        border-color: $radio-border;
+        width: 500px;
+      }
     }
   }
 
