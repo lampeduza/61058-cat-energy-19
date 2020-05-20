@@ -60,7 +60,17 @@
 
   &:active,
   &:focus {
+    ~ .field__icon {
+      color: rgb(99, 168, 59);
+    }
     border: 1px solid $light-dark;
+  }
+
+  &:invalid {
+    ~ .field__icon {
+      color: $field-error;
+    }
+    border-color: $field-error;
   }
 }
 
@@ -69,7 +79,9 @@
   top: 50%;
   display: block;
   transform: translate3d(0, -50%, 0);
+  color: #222222;
 }
+
 
 @media (min-width: $tablet-width) {
   .field {
@@ -97,11 +109,11 @@
     font-size: 20px;
     line-height: 20px;
     padding-left: 18px;
-  }
 
-  .field__input::placeholder {
-    font-size: 20px;
-    line-height: 20px;
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
 

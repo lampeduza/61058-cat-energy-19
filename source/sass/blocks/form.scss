@@ -144,12 +144,16 @@
   &:focus {
     border: 1px solid $light-dark;
   }
-}
 
-.form__comment-aria::placeholder {
-  font-size: 16px;
-  line-height: 18px;
-  color: $light-dark;
+  &:invalid {
+    border-color: $field-error;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: $light-dark;
+  }
 }
 
 .form__button {

@@ -62,7 +62,7 @@
                   <li class="form__item-option">
                     <div class="field">
                       <label class="field__label field__label" for="age">Возраст (лет):</label>
-                      <input class="field__input" type="text" id="age" name="age" placeholder="7">
+                      <input class="field__input" type="text" id="age" name="age" placeholder="7" required>
                     </div>
                   </li>
                 </ul>
@@ -120,7 +120,7 @@
             <!-- form comment -->
             <p class="form__comment">
               <label class="form__comment-title" for="comment">Комментарий</label>
-              <textarea class="form__comment-aria" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__comment-aria" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" required></textarea>
             </p>
             <!-- item 4 -->
             <fieldset class="form__item form__item--additional-info">
@@ -178,6 +178,7 @@
         <!-- end location container -->
         <!-- map -->
         <div class="location__picture">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2994371256045!2d30.3224049!3d59.938798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy%20Dom%20N.%20A.%20Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1589969184337!5m2!1sen!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/map/map-pin-desktop@1x.webp 1x, img/map/map-pin-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-pin-tablet@1x.webp 1x, img/map/map-pin-tablet@2x.webp 2x">
