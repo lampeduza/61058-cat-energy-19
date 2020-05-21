@@ -17,23 +17,16 @@
 }
 
 .copyright__link-image {
-
   margin-right: -7px;
 }
 
-.copyright__link-image svg {
+.copyright__logo {
   width: 41px;
   height: auto;
-}
-
-.copyright__link-image:hover svg {
-  fill: $green;
-}
-
-.copyright__link-image:active svg,
-.copyright__link-image:focus svg {
-  fill: $green;
-  opacity: 0.3;
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
