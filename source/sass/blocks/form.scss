@@ -151,8 +151,8 @@
 
   &--error {
     &:invalid {
-    border-color: $field-error;
-  }
+      border-color: $field-error;
+    }
   }
 
   &::placeholder {

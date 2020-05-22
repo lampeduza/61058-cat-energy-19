@@ -55,6 +55,7 @@
   &:checked {
     ~ .control__label {
       opacity: 0.3;
+
       &::before {
         border-color: $radio-border;
         opacity: 0.3;
@@ -69,6 +70,7 @@
   &:disabled {
     ~ .control__label {
       opacity: 0.3;
+
       &::before {
         border-color: $radio-border;
         opacity: 0.3;
