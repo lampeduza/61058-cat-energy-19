@@ -102,6 +102,9 @@ gulp.task("copy", function () {
 
 gulp.task("clean", function () {
   return del("build");
+
+    gulp.watch("source/sass/**/*.scss", gulp.series("css"));
+    gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
