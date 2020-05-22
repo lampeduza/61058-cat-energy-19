@@ -1,13 +1,10 @@
 .social {
-  padding-top: 19px;
-  padding-bottom: 18px;
   display: flex;
   justify-content: center;
 }
 
 .social__list {
   @include reset-list;
-  margin-left: 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -77,16 +74,15 @@
   }
 
   .social__list {
-    margin-bottom: 0;
+    margin-left: -15px;
     padding: 0;
-    margin-left: 27px;
     border: none;
   }
 
   .social__item {
-    margin-right: 20px;
-
     &--vk {
+      margin-right: 26px;
+
       .social__icon {
         width: 30px;
         height: 16px;
@@ -94,6 +90,8 @@
     }
 
     &--insta {
+      margin-right: 16px;
+
       .social__icon {
         width: 23px;
         height: 23px;

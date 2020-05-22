@@ -97,7 +97,7 @@
         <div class="container">
           <div class="example__wrapper">
             <!-- example column 1 -->
-            <div class="example__column">
+            <div class="example__text-wrapper">
               <h2 class="example__title">Живой пример</h2>
               <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
               <div class="example__statistics">
@@ -113,33 +113,37 @@
               </div>
             </div>
             <!-- example column 2 -->
-            <div class="example__column">
-              <div class="example__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/desktop/before-desktop@1x.webp 1x, img/desktop/before-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/before-tablet@1x.webp 1x, img/tablet/before-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/mobile/before-mobile@1x.webp 1x, img/mobile/before-mobile@1x.webp 2x">
+            <div class="example__preview-wrapper">
+              <div class="example__preview">
+                <div class="example__preview-item example__preview-item--before">
+                  <picture class="example__preview-picture">
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/desktop/before-desktop@1x.webp 1x, img/desktop/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/before-tablet@1x.webp 1x, img/tablet/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/mobile/before-mobile@1x.webp 1x, img/mobile/before-mobile@1x.webp 2x">
 
-                  <source media="(min-width: 1300px)" srcset="img/desktop/before-desktop@1x.png 1x, img/desktop/before-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/tablet/before-tablet@1x.png 1x, img/tablet/before-tablet@2x.png 2x">
-                  <img class="example__image-picture example__image-fat" width="320" height="240" src="img/mobile/before-mobile@1x.png" srcset="img/mobile/before-mobile@2x.png 2x" alt="Кот до похудения">
-                </picture>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/desktop/after-desktop@1x.webp 1x, img/desktop/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/after-tablet@1x.webp 1x, img/tablet/after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/mobile/after-mobile@1x.webp 1x, img/mobile/after-mobile@1x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/desktop/before-desktop@1x.png 1x, img/desktop/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/tablet/before-tablet@1x.png 1x, img/tablet/before-tablet@2x.png 2x">
+                    <img class="example__preview-image" width="320" height="240" src="img/mobile/before-mobile@1x.png" srcset="img/mobile/before-mobile@2x.png 2x" alt="Кот до похудения">
+                  </picture>
+                </div>
+                <div class="example__preview-item example__preview-item--after">
+                  <picture class="example__preview-picture">
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/desktop/after-desktop@1x.webp 1x, img/desktop/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/after-tablet@1x.webp 1x, img/tablet/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/mobile/after-mobile@1x.webp 1x, img/mobile/after-mobile@1x.webp 2x">
 
-                  <source media="(min-width: 1300px)" srcset="img/desktop/after-desktop@1x.png 1x, img/desktop/after-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/tablet/after-tablet@1x.png 1x, img/tablet/after-tablet@2x.png 2x">
-                  <img class="example__image-picture example__image-slim" width="320" height="240" src="img/mobile/after-mobile@1x.png" srcset="img/mobile/after-mobile@2x.png 2x" alt="Кот после похудения">
-                </picture>
+                    <source media="(min-width: 1300px)" srcset="img/desktop/after-desktop@1x.png 1x, img/desktop/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/tablet/after-tablet@1x.png 1x, img/tablet/after-tablet@2x.png 2x">
+                    <img class="example__preview-image" width="320" height="240" src="img/mobile/after-mobile@1x.png" srcset="img/mobile/after-mobile@2x.png 2x" alt="Кот после похудения">
+                  </picture>
+                </div>
               </div>
-              <div class="example__toggles">
-                <button class="example__before example__button" type="button">Было</button>
+              <div class="example__toggle-wrapper">
+                <button class="example__button example__button--before" type="button">Было</button>
                 <div class="example__toggle-aria">
                   <button class="example__toggle" type="button"></button>
                 </div>
-                <button class="example__after example__button" type="button">Стало</button>
+                <button class="example__button example__button--after" type="button">Стало</button>
               </div>
             </div>
           </div>
@@ -147,13 +151,11 @@
       </section>
       <!-- location -->
       <section class="location location--gray location--gray-index">
-        <div class="container">
-          <div class="location__wrapper">
-            <h2 class="visually-hidden">Контактная информация</h2>
-            <div class="location__row">
-              <b class="location__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</b>
-              <p class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></p>
-            </div>
+        <div class="location__wrapper container">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <div class="location__row">
+            <b class="location__slogan">приглашаем<br> к сотрудничеству дилеров!</b>
+            <p class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></p>
           </div>
         </div>
         <!-- map -->
@@ -173,44 +175,44 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__wrapper">
-          <a class="page-footer__picture" href="index.html">
-          <img class="page-footer__picture-logo" src="img/mobile/logo-footer.svg" width="128" height="24" alt="Логотип Cat energy">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo" href="index.html">
+            <img class="page-footer__logo-image" src="img/mobile/logo-footer.svg" width="128" height="24" alt="Логотип Cat energy">
           </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item social__item--vk">
-                <a class="social__link social__link" href="#" aria-label="В Вконтакте">
-                  <svg class="social__icon" width="22" height="12">
-                    <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--insta">
-                <a class="social__link social__link" href="#" aria-label="Инстаграм">
-                  <svg class="social__icon" width="17" height="17">
-                    <use xlink:href="img/sprite/sprite.svg#icon-insta"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--fb">
-                <a class="social__link social__link" href="#" aria-label="Фейсбук">
-                  <svg class="social__icon" width="10" height="19">
-                    <use xlink:href="img/sprite/sprite.svg#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="copyright__link-image" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__logo" width="41" height="41">
-                <use xlink:href="img/sprite/sprite.svg#icon-academy"></use>
-              </svg>
-            </a>
-          </div>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--vk">
+              <a class="social__link" href="#" aria-label="В Вконтакте">
+                <svg class="social__icon" width="22" height="12">
+                  <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--insta">
+              <a class="social__link" href="#" aria-label="Инстаграм">
+                <svg class="social__icon" width="17" height="17">
+                  <use xlink:href="img/sprite/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--fb">
+              <a class="social__link" href="#" aria-label="Фейсбук">
+                <svg class="social__icon" width="10" height="19">
+                  <use xlink:href="img/sprite/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo-image" width="41" height="41" fill="#666666">
+              <use xlink:href="img/sprite/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

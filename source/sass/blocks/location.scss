@@ -1,5 +1,5 @@
 .location {
-  padding-top: 28px;
+  padding-top: 29px;
 
   &--gray {
     background-color: $bg-footer;
@@ -22,6 +22,7 @@
 }
 
 .location__slogan {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -113,7 +114,6 @@
   .location {
     padding-top: 0;
     margin: 0 auto;
-    position: relative;
     background-color: $white;
     overflow: hidden;
 
@@ -123,16 +123,18 @@
   }
 
   .location__wrapper {
-    padding: 0;
+    position: relative;
+    padding: 0 110px;
   }
 
   .location__row {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 10;
     padding: 65px 90px 58px 76px;
     margin-bottom: 0;
-    position: absolute;
     background-color: $white;
-    top: 95px;
-    left: 40px;
   }
 
   .location__slogan {

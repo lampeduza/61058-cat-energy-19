@@ -9,14 +9,15 @@ html {
 }
 
 body {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
-  color: $dark;
+  line-height: 20px;
+  color: $text-color;
   background-color: #ffffff;
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 a {

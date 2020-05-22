@@ -1,18 +1,18 @@
+.page-main {
+  padding-top: 15px;
+}
+
 .page-main__title {
   margin: 0;
-  margin-top: 15px;
-  padding-bottom: 28px;
-  padding-left: 20px;
-  border-bottom: 1px solid #ededed;
+  margin-bottom: 28px;
+  padding: 0 20px;
+  font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
 
   &--form {
-    padding: 15px 0 0 20px;
     margin-bottom: 11px;
-    margin-top: 0;
-    border: none;
   }
 }
 

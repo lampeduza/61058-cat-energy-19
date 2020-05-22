@@ -9,6 +9,7 @@
 .form__info {
   display: block;
   padding-right: 20px;
+  font-family: $secondary-font;
   font-size: 13.3px;
   font-weight: 400;
   line-height: 18px;
@@ -49,6 +50,7 @@
 }
 
 .form__item-title {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 35px;
@@ -84,6 +86,7 @@
 }
 
 .form__comment-title {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 34px;
@@ -131,13 +134,13 @@
   line-height: 18px;
   color: $light-dark;
   height: 150px;
-  border: 1px solid $borderOfProduct;
+  border: 1px solid $border-color;
   text-transform: uppercase;
   padding: 12px 13px 15px 14px;
   outline: none;
 
   &:hover {
-    border: 1px solid $borderOfProduct;
+    border: 1px solid $border-color;
   }
 
   &:active,
@@ -199,7 +202,7 @@
     &--goal {
       margin: 0;
       margin-bottom: 71px;
-      border: 1px solid $borderOfProduct;
+      border: 1px solid $border-color;
       padding: 25px 0 33px 0;
     }
 

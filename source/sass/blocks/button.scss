@@ -1,12 +1,14 @@
 .button {
-  text-transform: uppercase;
-  color: $white;
-  background-color: #68b738;
+  display: block;
   padding: 10px;
+  border: none;
+  background-color: #68b738;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  color: $white;
   text-align: center;
-  display: block;
+  text-transform: uppercase;
 
   &:hover {
     background-color: #5eaa2f;
@@ -15,5 +17,11 @@
   &:active,
   &:focus {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #ededed;
+    pointer-events: none;
   }
 }

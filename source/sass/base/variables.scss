@@ -3,13 +3,13 @@ $bg-footer: #f2f2f2;
 $green: #68b738;
 $green-2: #73b74a;
 $white: #ffffff;
-$dark: #111111;
+$text-color: #111111;
 $light-dark: #444444;
 $academy-icon-color: #666666;
 $btn-show-colour: $bg-footer;
 $bg-toggle: #222222;
 $radio-border: #bababa;
-$borderOfProduct: #cdcdcd;
+$border-color: #cdcdcd;
 $field-error: #ff8282;
 
 /* retina */
@@ -18,4 +18,7 @@ $retina-dppx: 1.5dppx;
 
 /* @media */
 $tablet-width: 768px;
-$desktop-width: 1300px;
+$desktop-width: 1440px;
+
+$primary-font: "Arial", sans-serif;
+$secondary-font: "Oswald", sans-serif;

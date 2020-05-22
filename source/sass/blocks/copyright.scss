@@ -1,11 +1,11 @@
 .copyright {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
-  font-family: "Arial", sans-serif;
+  display: block;
   font-size: 16px;
   line-height: 16px;
   color: $light-dark;
@@ -16,13 +16,14 @@
   }
 }
 
-.copyright__link-image {
-  margin-right: -7px;
+.copyright__logo,
+.copyright__logo-image {
+  display: block;
+  width: 41px;
+  height: 41px;
 }
 
 .copyright__logo {
-  width: 41px;
-  height: auto;
   &:active,
   &:focus {
     opacity: 0.3;
@@ -31,10 +32,11 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-    margin: 0;
+    justify-content: flex-end;
   }
 
   .copyright__link {
+    margin-top: 0;
     margin-right: 15px;
   }
 }

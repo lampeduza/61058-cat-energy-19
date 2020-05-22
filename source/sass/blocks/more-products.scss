@@ -16,6 +16,7 @@
   vertical-align: top;
   background-color: $white;
   position: relative;
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -36,14 +37,14 @@
 }
 
 .more-products__item {
-  border-top: 1px solid $borderOfProduct;
+  border-top: 1px solid $border-color;
   padding-top: 13px;
   margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 39px;
     padding-bottom: 17px;
-    border-bottom: 1px solid $borderOfProduct;
+    border-bottom: 1px solid $border-color;
   }
 }
 
@@ -127,7 +128,7 @@
   }
 
   .more-products__list {
-    border: 1px solid $borderOfProduct;
+    border: 1px solid $border-color;
     margin-bottom: 68px;
     width: 100%;
   }
@@ -136,7 +137,7 @@
     padding: 25px 36px 27px 38px;
     margin-bottom: 0;
     border: none;
-    border-bottom: 1px solid $borderOfProduct;
+    border-bottom: 1px solid $border-color;
 
     &:last-child {
       margin-bottom: 0;
@@ -246,7 +247,7 @@
     margin: 0 0 80px -40px;
   }
 
-  .more-products__desktop-row {
+  .more-products__content {
     display: flex;
     justify-content: space-between;
   }

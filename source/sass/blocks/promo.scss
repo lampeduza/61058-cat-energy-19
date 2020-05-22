@@ -21,6 +21,7 @@
 .promo__title {
   margin: 0;
   margin-bottom: 24px;
+  font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
@@ -31,6 +32,7 @@
 .promo__slogan {
   margin: 0;
   margin-bottom: 29px;
+  font-family: $secondary-font;
   text-transform: uppercase;
   text-align: center;
   color: $white;
@@ -81,7 +83,7 @@
     margin-left: -3px;
     font-size: 60px;
     line-height: 60px;
-    color: $dark;
+    color: $text-color;
     text-align: left;
   }
 
@@ -91,7 +93,7 @@
     margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
-    color: $dark;
+    color: $text-color;
     text-align: left;
   }
 

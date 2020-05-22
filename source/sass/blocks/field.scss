@@ -38,6 +38,7 @@
   display: block;
   margin-right: 15px;
   text-transform: uppercase;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
   color: $bg-toggle;
@@ -52,10 +53,10 @@
   line-height: 18px;
   color: $light-dark;
   outline: none;
-  border: 1px solid $borderOfProduct;
+  border: 1px solid $border-color;
 
   &:hover {
-    border: 1px solid $borderOfProduct;
+    border: 1px solid $border-color;
   }
 
   &:active,

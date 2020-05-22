@@ -1,0 +1,125 @@
+.additional-сatalog {
+  padding-top: 29px;
+  padding-bottom: 35px;
+  overflow: hidden;
+}
+
+.additional-сatalog__wrapper {
+  padding: 0 20px;
+}
+
+.additional-сatalog__title {
+  margin: 0;
+  margin-bottom: 34px;
+  margin-left: -20px;
+  padding-right: 22px;
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: $white;
+  position: relative;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -9999px;
+    right: -9999px;
+    height: 3px;
+    background-color: $green;
+    z-index: -1;
+  }
+}
+
+.additional-сatalog__list {
+  @include reset-list;
+}
+
+.additional-сatalog__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #ededed;
+
+  &:first-child {
+    border-top: 1px solid #ededed;
+  }
+}
+
+.additional-сatalog__gift {
+  margin-top: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-сatalog {
+    padding-top: 69px;
+    padding-bottom: 76px;
+  }
+
+  .additional-сatalog__wrapper {
+    padding: 0 30px;
+  }
+
+  .additional-сatalog__title {
+    margin-bottom: 80px;
+    padding: 0 37px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 21px;
+    }
+  }
+
+  .additional-сatalog__item {
+    padding: 25px 37px 27px;
+    border: 1px solid #ededed;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #ededed;
+    }
+  }
+
+  .additional-сatalog__gift {
+    margin-top: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-сatalog {
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+
+  .additional-сatalog__wrapper {
+    padding: 0 110px;
+  }
+
+  .additional-сatalog__title {
+    margin-left: -38px;
+  }
+
+  .additional-сatalog__content {
+    display: flex;
+  }
+
+  .additional-сatalog__list {
+    width: calc(100% - 325px);
+  }
+
+  .additional-сatalog__item {
+    padding: 15px 0 16px 0;
+    border: none;
+    border-top: 1px solid #ededed;
+  }
+
+  .additional-сatalog__gift {
+    width: 245px;
+    margin-top: 0;
+    margin-left: 80px;
+  }
+}
