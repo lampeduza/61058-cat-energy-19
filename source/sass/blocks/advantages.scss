@@ -1,5 +1,5 @@
 .advantages {
-  padding: 18px 0 40px 0;
+  padding: 16px 0 42px 0;
 }
 
 .advantages__wrapper {
@@ -8,7 +8,8 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -21,14 +22,14 @@
 .advantages__item {
   font-family: "Arial", sans-serif;
   line-height: 18px;
-  color: $light-dark-colour;
+  color: $light-dark;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 60px;
   padding-left: 80px;
   margin-bottom: 20px;
   position: relative;
-  min-height: 60px;
 
   &:last-child {
     margin: 0;
@@ -37,10 +38,10 @@
   &::after {
     content: "";
     display: block;
-    background-color: $bg-leaf;
+    background-color: $green;
     background-size: 50px 50px;
     position: absolute;
-    top: -2px;
+    top: 0;
     left: 0;
     width: 60px;
     height: 60px;
@@ -102,7 +103,7 @@
 
   .advantages__title {
     font-size: 60px;
-    margin-bottom: 74px;
+    margin-bottom: 72px;
   }
 
   .advantages__list {
@@ -112,15 +113,15 @@
   }
 
   .advantages__item {
+    display: block;
     width: 246px;
-    min-height: 228px;
+    min-height: 225px;
     font-size: 16px;
     line-height: 24px;
-    padding: 0;
-    padding: 110px 0 0 0;
+    padding-left: 0;
+    padding-top: 110px;
     margin-right: 138px;
-    margin-bottom: 89px;
-    position: relative;
+    margin-bottom: 92px;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -137,7 +138,7 @@
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
       line-height: 281px;
-      color: $bg-footer-colour;
+      color: $bg-footer;
       position: absolute;
       top: -41px;
       right: 16px;
@@ -164,6 +165,7 @@
       width: 80px;
       height: 80px;
       left: 0;
+      top: -1px;
     }
   }
 }
@@ -176,13 +178,12 @@
   }
 
   .advantages__title {
-    margin-bottom: 74px;
+    margin-bottom: 72px;
   }
 
   .advantages__item {
     font-size: 16px;
     width: 245px;
-    padding: 110px 0 0 0;
     margin-right: 80px;
     margin-bottom: 0;
 

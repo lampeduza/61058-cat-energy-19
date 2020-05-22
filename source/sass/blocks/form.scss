@@ -7,19 +7,18 @@
 }
 
 .form__info {
-  width: 226px;
   display: block;
+  padding-right: 20px;
+  font-family: $secondary-font;
+  font-size: 13.3px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
-/* временно */
-margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .form__item {
   padding: 0;
-  margin: 0;
   margin: 19px 0;
   border: none;
 
@@ -30,40 +29,41 @@ margin-bottom: 39px;
 
   &--goal {
     margin: 0;
-    padding-bottom: 26px;
+    padding-bottom: 19px;
     border-bottom: 1px solid #ededed;
   }
 
   &--contact-data {
-    margin: 22px 0 27px 0;
+    margin: 28px 0 29px 0;
   }
 
   &--additional-info {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 }
 
 .form__comment {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   display: flex;
   flex-direction: column;
 }
 
 .form__item-title {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   display: inline-block;
 
   position: relative;
-  background-color: $white-colour;
+  background-color: $white;
 
   &::after {
     content: "";
     min-width: 100vw;
     height: 3px;
-    background-color: $bg-leaf;
+    background-color: $green;
     position: absolute;
     z-index: -1;
   }
@@ -81,25 +81,25 @@ margin-bottom: 39px;
   }
 
   &--additional-info::after {
-    top: 15px
+    top: 15px;
   }
 }
 
 .form__comment-title {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   display: inline-block;
-
   position: relative;
-  background-color: $white-colour;
+  background-color: $white;
   width: 142px;
 
   &::after {
     content: "";
     min-width: 100vw;
     height: 3px;
-    background-color: $bg-leaf;
+    background-color: $green;
     position: absolute;
     top: 13px;
     z-index: -1;
@@ -130,29 +130,36 @@ margin-bottom: 39px;
 }
 
 .form__comment-aria {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
-  color: $light-dark-colour;
+  color: $light-dark;
   height: 150px;
-  border: 1px solid $borderOfProduct;
+  border: 1px solid $border-color;
   text-transform: uppercase;
   padding: 12px 13px 15px 14px;
   outline: none;
 
   &:hover {
-    border: 1px solid $borderOfProduct;
+    border: 1px solid $border-color;
   }
 
   &:active,
   &:focus {
-    border: 1px solid $light-dark-colour;
+    border: 1px solid $light-dark;
   }
-}
 
-.form__comment-aria::placeholder {
-  font-size: 16px;
-  line-height: 18px;
-  color: $light-dark-colour;
+  &--error {
+    &:invalid {
+      border-color: $field-error;
+    }
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: $light-dark;
+  }
 }
 
 .form__button {
@@ -166,7 +173,7 @@ margin-bottom: 39px;
   margin: 0 auto 32px auto;
   font-family: "Arial", sans-serif;
   line-height: 16px;
-  color: $light-dark-colour;
+  color: $light-dark;
 }
 
 @media (min-width: $tablet-width) {
@@ -180,7 +187,7 @@ margin-bottom: 39px;
 
   .form__info {
     width: auto;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
     margin-bottom: 66px;
     padding-right: 250px;
@@ -192,20 +199,18 @@ margin-bottom: 39px;
     &--basic {
       padding-bottom: 0;
       margin: 0;
-      margin-bottom: 73px;
+      margin-bottom: 72px;
     }
 
     &--goal {
-      padding: 0;
       margin: 0;
-      margin-bottom: 75px;
-      border: 1px solid $borderOfProduct;
-      padding: 22px 0 25px 0;
+      margin-bottom: 71px;
+      border: 1px solid $border-color;
+      padding: 25px 0 33px 0;
     }
 
     &--contact-data {
-      margin: 0;
-      margin-bottom: 65px;
+      margin: 0 0 65px 0;
     }
 
     &--additional-info {
@@ -224,7 +229,7 @@ margin-bottom: 39px;
       content: "";
       min-width: 100vw;
       height: 3px;
-      background-color: $bg-leaf;
+      background-color: $green;
       position: absolute;
       left: -500px;
       top: 22px;
@@ -232,7 +237,7 @@ margin-bottom: 39px;
     }
 
     &--contact-data {
-      margin-bottom: 76px;
+      margin-bottom: 73px;
       width: auto;
       padding-right: 42px;
     }
@@ -276,7 +281,7 @@ margin-bottom: 39px;
       content: "";
       min-width: 100vw;
       height: 3px;
-      background-color: $bg-leaf;
+      background-color: $green;
       position: absolute;
       top: 22px;
       left: -70px;
@@ -289,12 +294,19 @@ margin-bottom: 39px;
   }
 
   .form__comment-aria {
+    font-size: 20px;
+    line-height: 20px;
     height: 174px;
     padding: 14px 13px 15px 18px;
   }
 
+  .form__comment-aria::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .form__item-option {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 
     &:last-child {
       margin-bottom: 0;
@@ -302,6 +314,10 @@ margin-bottom: 39px;
 
     &--goal {
       margin-bottom: 13px;
+    }
+
+    &--data {
+      margin-bottom: 23px;
     }
 
     &--additional-info {
@@ -334,21 +350,11 @@ margin-bottom: 39px;
     margin-right: 62px;
   }
 
-  .form__comment-aria {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .form__required-field {
     font-size: 16px;
     margin: 0;
     margin-top: -4px;
     width: auto;
-  }
-
-  .form__comment-aria::placeholder {
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 
@@ -369,7 +375,7 @@ margin-bottom: 39px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 
   .form__item {
@@ -385,21 +391,29 @@ margin-bottom: 39px;
 
     &--additional-info {
       margin-top: 0;
-      margin-bottom: 61px;
+      margin-bottom: 63px;
     }
   }
 
   .form__item-title,
   .form__comment-title {
-
     &::before {
       left: -1000px;
     }
   }
 
-  .form__item-list-data {
-    display: flex;
-    align-items: center;
+  .form__item-title {
+    &--contact-data {
+      margin-bottom: 76px;
+    }
+  }
+
+  .form__item-list {
+    &--data {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .form__item-list-additional-info {
@@ -409,10 +423,9 @@ margin-bottom: 39px;
   }
 
   .form__item-option {
-
     &--data {
       margin-bottom: 0;
-      margin-right: 78px;
+      min-width: 570px;
     }
 
     &:last-child {

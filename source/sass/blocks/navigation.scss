@@ -1,7 +1,7 @@
 .navigation {
   display: none;
   position: absolute;
-  top: 67px;
+  top: 66px;
   left: 0;
   width: 100%;
   z-index: 10;
@@ -14,15 +14,16 @@
 
 .navigation__item {
   border-bottom: 1px solid #e6e6e6;
+  font-family: $secondary-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .navigation__link {
   display: block;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color: $dark-colour;
-  background-color: $white-colour;
+  color: $text-color;
+  background-color: $white;
   text-transform: uppercase;
   padding: 23px 10px 22px 10px;
 
@@ -57,12 +58,12 @@
     }
 
     &--active {
-      border-bottom: 2px solid $bg-leaf;
+      border-bottom: 2px solid $green;
     }
   }
 
   .navigation__link {
-    padding: 9px 0;
+    padding: 7px 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
@@ -90,17 +91,17 @@
 
   .navigation__list--white .navigation__item {
     &--active {
-      border-bottom: 2px solid $white-colour;
+      border-bottom: 2px solid $white;
     }
   }
 
   .navigation__list--white .navigation__link {
     background-color: transparent;
-    color: $white-colour;
+    color: $white;
 
     &:active,
     &:focus {
-      opacity: .3
+      opacity: 0.3;
     }
   }
 

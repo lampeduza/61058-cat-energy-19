@@ -1,0 +1,165 @@
+.control {
+  &--radio {
+    .control__label {
+      &::before {
+        border-radius: 50%;
+      }
+
+      &::after {
+        top: 9px;
+        left: 9px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $green;
+      }
+
+      &:hover::before {
+        border-color: $radio-border;
+      }
+    }
+  }
+
+  &--checkbox {
+    .control__label {
+      &::after {
+        top: 6px;
+        left: 5px;
+        width: 22px;
+        height: 17px;
+        background-image: url("../img/icons/icon-tick.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+
+      &:hover::before {
+        border-color: $radio-border;
+      }
+    }
+  }
+}
+
+.control__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked {
+    ~ .control__label {
+      opacity: 0.3;
+
+      &::before {
+        border-color: $radio-border;
+        opacity: 0.3;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &:disabled {
+    ~ .control__label {
+      opacity: 0.3;
+
+      &::before {
+        border-color: $radio-border;
+        opacity: 0.3;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.control__label {
+  position: relative;
+  display: block;
+  min-height: 30px;
+  padding-left: 46px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border-color;
+  }
+
+  &::after {
+    opacity: 0;
+    transition: 0.2s;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .control {
+    &--radio {
+      .control__label {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 88px;
+
+        &::before {
+          width: 40px;
+          height: 40px;
+          left: 27px;
+        }
+
+        &::after {
+          top: 10px;
+          left: 38px;
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    &--checkbox {
+      .control__label {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 58px;
+
+        &::before {
+          width: 40px;
+          height: 40px;
+        }
+
+        &::after {
+          top: 10px;
+          left: 9px;
+          width: 22px;
+          height: 17px;
+          background-image: url("../img/icons/icon-tick.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

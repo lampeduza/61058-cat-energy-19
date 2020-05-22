@@ -2,298 +2,140 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  &--email,
+  &--phone {
+    position: relative;
+  }
+
+  &--email {
+    .field__label {
+      margin-right: 11px;
+    }
+
+    .field__icon {
+      right: 15px;
+      width: 18px;
+      height: 14px;
+    }
+  }
+
+  &--phone {
+    .field__label {
+      margin-right: 9px;
+    }
+
+    .field__icon {
+      right: 12px;
+      width: 21px;
+      height: 21px;
+    }
+  }
+}
+
+.field__label {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $bg-toggle;
 }
 
 .field__input {
   width: 100%;
   height: 45px;
-  padding: 14px 13px 14px 14px;
+  padding: 14px 40px 14px 14px;
   text-transform: uppercase;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
-  color: $light-dark-colour;
+  color: $light-dark;
   outline: none;
-
-  &--contact-data {
-    padding: 12px 40px 17px 15px;
-  }
+  border: 1px solid $border-color;
 
   &:hover {
-    border: 1px solid $borderOfProduct;
+    border: 1px solid $border-color;
   }
 
   &:active,
   &:focus {
-    border: 1px solid $light-dark-colour;
+    ~ .field__icon {
+      color: rgb(99, 168, 59);
+    }
+    border: 1px solid $light-dark;
+  }
+
+  &:invalid {
+    ~ .field__icon {
+      color: $field-error;
+    }
+  }
+
+  &--error {
+    &:invalid {
+      border-color: $field-error;
+    }
   }
 }
 
-.field__input-mail {
-  position: absolute;
-  right: 15px;
-}
-
-.field__input-phone {
-  position: absolute;
-  right: 12px;
-}
-
-.form__item-input::placeholder {
-  font-size: 16px;
-  line-height: 18px;
-  color: $light-dark-colour;
-}
-
-.field__label {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  color: $bg-toggle;
-
-  &--name {
-    margin-right: 14px;
-  }
-
-  &--weight {
-    width: 89px;
-    margin-right: 14px;
-  }
-
-  &--age {
-        width: 165px;
-    margin-right: 14px;
-  }
-
-  &--mail {
-    width: 69px;
-    margin-right: 11px;
-  }
-
-  &--number {
-    margin-right: 9px;
-  }
-
-  &--additional-info {
-    position: relative;
-    padding-left: 46px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-}
-
-.field__label-goal {
-  position: relative;
-  padding-left: 46px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
-.field__radio + .field__label-goal::before {
-  content: "";
+.field__icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  left: 0px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $borderOfProduct;
+  display: block;
+  transform: translate3d(0, -50%, 0);
+  color: #222222;
 }
 
-.field__radio:checked + .field__label-goal::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 9px;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background-color: $bg-leaf;
-  width: 12px;
-  height: 12px;
-}
-
-.field__checkbox + .field__label--additional-info::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $borderOfProduct;
-}
-
-.field__checkbox:checked + .field__label--additional-info::after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: 5px;
-  transform: translateY(-50%);
-  width: 22px;
-  height: 17px;
-  background-image: url("../img/icons/icon-tick.svg");
-}
-
-.field__radio:checked + .field__label-goal::before {
-  border-color: $borderOfProduct;
-}
-
-
-.field__radio + .field__label:hover::before,
-.field__checkbox + .field__label:hover::before {
-  border-color: #bababa;
-}
-
-.field__radio + .field__label:active::before,
-.field__checkbox + .field__label:active::before,
-.field__radio + .field__label:focus::before,
-.field__checkbox + .field__label:focus::before {
-  border-color: #bababa;
-  opacity: .3;
-}
-
-.field__radio:active + .field__label,
-.field__radio:focus + .field__label,
-.field__checkbox:active + .field__label,
-.field__checkbox:focus + .field__label {
-  color: rgba(34, 34, 34, 0.3);
-  opacity: .3;
-}
-
-.field__radio:disabled + .field__label-goal {
-  color: rgba(34, 34, 34, 0.3);
-}
-
-.field__radio:disabled + .field__label-goal::before {
-  border-color: #bababa;
-  opacity: 0.3;
-}
-
-.field__radio:checked:disabled + .field__label-goal::after {
-  background-color: $bg-leaf;
-  opacity: 0.3;
-}
 
 @media (min-width: $tablet-width) {
+  .field {
+    &--email {
+      .field__label {
+        margin-right: 20px;
+      }
+    }
+
+    &--phone {
+      .field__label {
+        margin-right: 14px;
+      }
+    }
+  }
+
   .field__label {
     font-size: 20px;
     line-height: 20px;
-
-    &--name {
-      margin-right: 17px;
-    }
-
-    &--weight {
-      width: 92px;
-      margin-right: 17px;
-    }
-
-    &--age {
-      width: 155px;
-      margin-right: 17px;
-    }
-
-    &--mail {
-      width: 77px;
-      margin-right: 16px;
-    }
-
-    &--number {
-      margin-right: 14px;
-    }
-
-    &--additional-info {
-      padding-left: 59px;
-    }
-  }
-
-  .field__label-goal {
-    padding-left: 88px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-right: 20px;
   }
 
   .field__input {
     height: 52px;
-    padding: 15px 35px 16px 19px;
     font-size: 20px;
     line-height: 20px;
+    padding-left: 18px;
 
-    &--contact-data {
-      padding: 12px 40px 17px 18px;
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
     }
-  }
-
-  .field__input::placeholder{
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .field__radio + .field__label-goal::before {
-    width: 40px;
-    height: 40px;
-    left: 28px;
-  }
-
-  .field__radio:checked + .field__label-goal::after {
-    left: 39px;
-    width: 18px;
-    height: 18px;
-  }
-
-  .field__checkbox + .field__label--additional-info::before {
-    width: 40px;
-    height: 40px;
-  }
-
-  .field__checkbox:checked + .field__label--additional-info::after {
-    top: 19px;
-    left: 9px;
-    width: 21px;
-    height: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .field__label {
-    &--weight {
-      width: 92px;
+  .field {
+    &--email {
+      .field__icon {
+        right: 19px;
+      }
     }
 
-    &--age {
-      width: 159px;
-    }
-
-    &--mail {
-      width: 67px;
-      margin-right: 17px;
-    }
-
-    &--number {
-      margin-right: 17px;
-    }
-  }
-
-  .field__option {
-    &--data {
-      margin-bottom: 0;
-      width: 570px;
-    }
-  }
-
-  .field__input-mail {
-    position: absolute;
-    right: 19px;
-  }
-
-  .field__input-phone {
-    position: absolute;
-    right: 18px;
-  }
-
-  .field__input {
-    &--contact-data {
-      width: 486px;
+    &--phone {
+      .field__icon {
+        right: 18px;
+      }
     }
   }
 }

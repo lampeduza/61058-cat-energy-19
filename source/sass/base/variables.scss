@@ -1,19 +1,24 @@
-$bg-footer-colour: #f2f2f2;
-$bg-leaf: #68b738;
-$white-colour: #ffffff;
-$dark-colour: #111111;
-$light-dark-colour: #444444;
-$btn-show-all-colour: $bg-footer-colour;
+/* colours */
+$bg-footer: #f2f2f2;
+$green: #68b738;
+$green-2: #73b74a;
+$white: #ffffff;
+$text-color: #111111;
+$light-dark: #444444;
+$academy-icon-color: #666666;
+$btn-show-colour: $bg-footer;
 $bg-toggle: #222222;
-$borderOfProduct: #cdcdcd;
-$bg-colour-gift: #73b74a;
+$radio-border: #bababa;
+$border-color: #cdcdcd;
+$field-error: #ff8282;
 
+/* retina */
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 /* @media */
 $tablet-width: 768px;
-$desktop-width: 1300px;
+$desktop-width: 1440px;
 
-/* forms */
-$field-error: #ff8282;
+$primary-font: "Arial", sans-serif;
+$secondary-font: "Oswald", sans-serif;

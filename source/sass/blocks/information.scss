@@ -3,7 +3,7 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: $light-dark-colour;
+  color: $light-dark;
   padding: 0;
 }
 
@@ -18,7 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .product__item-information-row {
-    border-bottom: 1px solid $borderOfProduct;
+    border-bottom: 1px solid $border-color;
   }
 
   .information__field,

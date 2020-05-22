@@ -1,43 +1,70 @@
 .social {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
-  margin-bottom: 19px;
-  padding-top: 23px;
-  padding-bottom: 19px;
   display: flex;
   justify-content: center;
 }
 
 .social__list {
   @include reset-list;
-  width: 125px;
-  margin-left: -10px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .social__item {
-  margin-right: 36px;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--vk {
+    .social__icon {
+      width: 22px;
+      height: 12px;
+    }
+  }
+
+  &--insta {
+    .social__icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &--fb {
+    .social__icon {
+      width: 10px;
+      height: 19px;
+    }
+  }
 }
 
-.social__item:nth-child(2) {
-  margin-right: 40px;
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+
+  &:hover {
+    .social__icon {
+      fill: $green;
+    }
+  }
+
+  &:active,
+  &:focus {
+    .social__icon {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
 }
 
-.social__item:last-child {
-  margin-right: 0;
+.social__icon {
+  display: block;
 }
 
-.social__link:hover svg {
-  fill: $bg-leaf;
-}
-
-.social__link:active svg,
-.social__link:focus svg {
-  fill: $bg-leaf;
-  opacity: .3;
-}
 
 @media (min-width: $tablet-width) {
   .social {
@@ -47,41 +74,40 @@
   }
 
   .social__list {
+    margin-left: -15px;
     padding: 0;
-    margin-bottom: 0;
-    margin-left: 19px;
     border: none;
-
-    &::before,
-    &::after {
-      display: none;
-    }
   }
 
   .social__item {
-    margin-right: 28px;
+    &--vk {
+      margin-right: 26px;
+
+      .social__icon {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
+    &--insta {
+      margin-right: 16px;
+
+      .social__icon {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      .social__icon {
+        width: 14px;
+        height: 28px;
+      }
+    }
   }
 
-  .social__item:nth-child(2) {
-    margin-right: 29px;
-  }
-
-  .social__item:last-child {
-    margin-right: 0;
-  }
-
-  .social__link--vk svg {
+  .social__link {
     width: 30px;
-    height: 16px;
-  }
-
-  .social__link--insta svg {
-    width: 23px;
-    height: 23px;
-  }
-
-  .social__link--fb svg {
-    width: 14px;
-    height: 28px;
+    height: 30px;
   }
 }
