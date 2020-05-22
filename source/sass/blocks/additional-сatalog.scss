@@ -65,12 +65,13 @@
 
   .additional-сatalog__title {
     margin-bottom: 80px;
+    margin-left: -1px;
     padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
 
     &::after {
-      top: 21px;
+      top: 22px;
     }
   }
 

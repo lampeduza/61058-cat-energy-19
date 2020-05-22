@@ -50,19 +50,19 @@
                   <li class="form__item-option">
                     <div class="field">
                       <label class="field__label field__label" for="name">Имя:*</label>
-                      <input class="field__input" type="text" id="name" name="name" placeholder="Барсик" required>
+                      <input class="field__input field__input--error" type="text" id="name" name="name" placeholder="Барсик" required>
                     </div>
                   </li>
                   <li class="form__item-option">
                     <div class="field">
                       <label class="field__label field__label" for="weight">Вес (кг):*</label>
-                      <input class="field__input" type="text" id="weight" name="weight" placeholder="7" required>
+                      <input class="field__input field__input--error" type="text" id="weight" name="weight" placeholder="7">
                     </div>
                   </li>
                   <li class="form__item-option">
                     <div class="field">
                       <label class="field__label field__label" for="age">Возраст (лет):</label>
-                      <input class="field__input" type="text" id="age" name="age" placeholder="7" required>
+                      <input class="field__input field__input--error" type="text" id="age" name="age" placeholder="7">
                     </div>
                   </li>
                 </ul>
@@ -79,7 +79,7 @@
                   </li>
                   <li class="form__item-option form__item-option--radio">
                     <div class="control control--radio">
-                      <input class="control__input" type="radio" id="weight-gain" name="weight" value="weight-gain" disabled>
+                      <input class="control__input" type="radio" id="weight-gain" name="weight" value="weight-gain">
                       <label class="control__label" for="weight-gain">Набор массы</label>
                     </div>
                   </li>
@@ -100,7 +100,7 @@
                 <li class="form__item-option form__item-option--data">
                   <div class="field field--email">
                     <label class="field__label" for="mail">E-mail:*</label>
-                    <input class="field__input" type="text" id="mail" name="mail" placeholder="kuklachev@gmail.com" required>
+                    <input class="field__input field__input--error" type="text" id="mail" name="mail" placeholder="kuklachev@gmail.com">
                     <svg class="field__icon" width="18" height="14">
                       <use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
                     </svg>
@@ -109,7 +109,7 @@
                 <li class="form__item-option form__item-option--data">
                   <div class="field field--phone">
                     <label class="field__label" for="number">Телефон:*</label>
-                    <input class="field__input" type="text" id="number" name="number" placeholder="8 (960) 900-60-90" required>
+                    <input class="field__input field__input--error" type="text" id="number" name="number" placeholder="8 (960) 900-60-90">
                     <svg class="field__icon" width="21" height="21">
                       <use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
                     </svg>
@@ -120,7 +120,7 @@
             <!-- form comment -->
             <p class="form__comment">
               <label class="form__comment-title" for="comment">Комментарий</label>
-              <textarea class="form__comment-aria" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота" required></textarea>
+              <textarea class="form__comment-aria form__comment-aria--error" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
             <!-- item 4 -->
             <fieldset class="form__item form__item--additional-info">
@@ -140,7 +140,7 @@
                 </li>
                 <li class="form__item-option form__item-option--additional-info">
                   <div class="control control--checkbox">
-                    <input class="control__input" type="checkbox" id="milk" name="milk" disabled>
+                    <input class="control__input" type="checkbox" id="milk" name="milk">
                     <label class="control__label" for="milk">Молоко</label>
                   </div>
                 </li>

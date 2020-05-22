@@ -1,7 +1,7 @@
 .catalog__title {
   margin: 0;
   margin-bottom: 28px;
-  padding: 0 20px;
+  padding: 15px 20px 0 20px;
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
@@ -23,16 +23,16 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding-top: 18px;
+    padding-top: 33px;
   }
-  
+
   .catalog__title {
     margin-bottom: 83px;
     padding: 0;
     font-size: 60px;
     line-height: 60px;
   }
-  
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +64,10 @@
 @media (min-width: $desktop-width) {
   .catalog {
     padding-top: 3px;
+  }
+
+  .catalog__title {
+    padding-top: 15px;
   }
 
   .catalog__item {

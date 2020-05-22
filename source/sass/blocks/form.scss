@@ -130,6 +130,7 @@
 }
 
 .form__comment-aria {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
   color: $light-dark;
@@ -148,8 +149,10 @@
     border: 1px solid $light-dark;
   }
 
-  &:invalid {
+  &--error {
+    &:invalid {
     border-color: $field-error;
+  }
   }
 
   &::placeholder {
