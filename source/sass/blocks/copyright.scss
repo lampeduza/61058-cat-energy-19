@@ -5,7 +5,10 @@
 }
 
 .copyright__link {
-  display: block;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   color: $light-dark;
@@ -16,14 +19,11 @@
   }
 }
 
-.copyright__logo,
-.copyright__logo-image {
+.copyright__logo {
   display: block;
   width: 41px;
   height: 41px;
-}
 
-.copyright__logo {
   &:active,
   &:focus {
     opacity: 0.3;
@@ -37,6 +37,10 @@
 
   .copyright__link {
     margin-top: 0;
-    margin-right: 15px;
+    justify-content: flex-end;
+  }
+
+  .copyright__logo {
+    margin-left: 16px;
   }
 }

@@ -160,7 +160,7 @@
   }
 
   .example__wrapper {
-    padding: 0;
+    padding: 0 30px;
   }
 
   .example__title {
@@ -367,6 +367,7 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 0 110px;
   }
 
   .example__text-wrapper {

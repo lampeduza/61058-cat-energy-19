@@ -145,7 +145,7 @@
   }
 
   .offers__wrapper {
-    padding: 0;
+    padding: 0 30px;
   }
 
   .offers__item {
@@ -241,6 +241,10 @@
 @media (min-width: $desktop-width) {
   .offers {
     margin-bottom: 45px;
+  }
+
+  .offers__wrapper {
+    padding: 0 110px;
   }
 
   .offers__list {

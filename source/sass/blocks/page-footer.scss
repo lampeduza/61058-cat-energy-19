@@ -7,10 +7,6 @@
   padding: 0 20px;
 }
 
-.page-footer__logo-wrapper {
-  margin-bottom: 31px;
-}
-
 .page-footer__logo,
 .page-footer__logo-image {
   display: block;
@@ -19,7 +15,7 @@
 }
 
 .page-footer__logo {
-  margin: 0 auto;
+  margin: 0 auto 31px auto;
 
   &:hover {
     opacity: 0.8;
@@ -57,14 +53,11 @@
     justify-content: space-between;
   }
 
-  .page-footer__logo-wrapper {
-    margin: 0;
-    width: 33.33%;
-  }
-
   .page-footer__logo {
     margin: 0;
     flex-shrink: 0;
+    margin: 0;
+    width: 33.33%;
   }
 
   .page-footer__copyright {
