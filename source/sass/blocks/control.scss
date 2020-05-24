@@ -80,9 +80,14 @@
   background-color: $green;
 }
 
-.control__radio:checked:focus + label::after,
-.control__radio:checked:active + label::after {
+.control__radio:checked:active + label::after,
+.control__radio:checked:focus + label::after {
   background-color: #cfe8c1;
+}
+
+.control--radio:active label::after,
+.control--radio:focus label::after {
+  opacity: 0.3;
 }
 
 .control--checkbox label {
