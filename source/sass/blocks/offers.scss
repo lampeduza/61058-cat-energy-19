@@ -148,6 +148,11 @@
     padding: 0 30px;
   }
 
+  .offers__list {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   .offers__item {
     padding: 65px 275px 60px 53px;
     margin-bottom: 26px;
@@ -251,6 +256,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: auto;
   }
 
   .offers__item {
