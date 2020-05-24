@@ -68,7 +68,7 @@
   }
 }
 
-.page-header--opened .navigation {
+.page-header--opened .page-header__navigation {
   display: block;
 }
 
@@ -76,7 +76,7 @@
   display: none;
 }
 
-.page-header--no-js .navigation {
+.page-header--no-js .page-header__navigation {
   display: block;
   position: static;
 }
