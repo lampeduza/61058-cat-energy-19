@@ -110,6 +110,8 @@
     display: flex;
     flex-wrap: wrap;
     counter-reset: myCounter;
+    width: 708px;
+    margin: 0 auto;
   }
 
   .advantages__item {
@@ -183,6 +185,10 @@
 
   .advantages__title {
     margin-bottom: 72px;
+  }
+
+  .advantages__list {
+    width: auto;
   }
 
   .advantages__item {
