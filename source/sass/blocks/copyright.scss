@@ -13,9 +13,23 @@
   line-height: 16px;
   color: $light-dark;
 
+  &:hover {
+    .copyright__logo {
+      fill: $green;
+    }
+  }
+
   &:active,
   &:focus {
     color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active,
+  &:focus {
+    .copyright__logo {
+      fill: $green;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -23,11 +37,6 @@
   display: block;
   width: 41px;
   height: 41px;
-
-  &:active,
-  &:focus {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $tablet-width) {
