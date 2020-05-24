@@ -107,7 +107,7 @@
     right: 22px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("../img/icons/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 25px;
@@ -115,7 +115,7 @@
   }
 
   &:hover::after {
-    background-image: url("../img/icons/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
     background-size: 34px 12px;
     width: 34px;
@@ -126,7 +126,7 @@
   &:active::after,
   &:focus::after {
     opacity: 0.3;
-    background-image: url("../img/icons/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-size: 34px 12px;
     width: 34px;
     height: 12px;
