@@ -30,6 +30,7 @@
   &:disabled {
     ~ .control__label {
       opacity: 0.3;
+
       &::before {
         border-color: $radio-border;
         opacity: 0.3;
@@ -125,8 +126,6 @@
   background-position: center;
 }
 
-
-
 @media (min-width: $tablet-width) {
   .control__label {
     padding-left: 70px;
@@ -135,6 +134,7 @@
       transition: 0.2s;
     }
   }
+
   .control {
     &--radio {
       .control__label {
