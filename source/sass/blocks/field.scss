@@ -74,6 +74,10 @@
     }
   }
 
+  &::placeholder {
+    color: $light-dark;
+  }
+
   &--error {
     &:invalid {
       border-color: $field-error;
