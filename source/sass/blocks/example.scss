@@ -367,7 +367,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-top: 83px;
+    padding-top: 62px;
     padding-bottom: 35px;
   }
 
@@ -381,6 +381,7 @@
     position: relative;
     z-index: 100;
     width: 570px;
+    padding-top: 20px;
   }
 
   .example__title {
@@ -418,17 +419,49 @@
   .example__preview {
     top: -34px;
     left: 13px;
+    margin-bottom: 31px;
   }
 
+
   .example__preview-item {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    background-color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 190px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
     &--before {
       width: 53%;
+      box-shadow: -980px 1170px 0 980px #f2f2f2;
+
+      &::after {
+        background-color: #f2f2f2;
+      }
+    }
+
+    &--after {
+      box-shadow: 0 1170px 0 980px #eaeaea;
+
+      &::after {
+        background-color: #eaeaea;
+      }
+
+      .example__preview-picture,
+      .example__preview-image {
+        position: relative;
+        z-index: 1;
+      }
     }
   }
 
-  .example__preview-picture {
-    top: -20px;
-  }
 
   .example__toggle-wrapper {
     top: -32px;
