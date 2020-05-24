@@ -22,10 +22,7 @@
   &:active,
   &:focus {
     color: rgba(68, 68, 68, 0.3);
-  }
 
-  &:active,
-  &:focus {
     .copyright__logo {
       fill: $green;
       opacity: 0.3;
