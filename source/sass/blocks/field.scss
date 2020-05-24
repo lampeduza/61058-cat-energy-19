@@ -65,7 +65,7 @@
     ~ .field__icon {
       color: rgb(99, 168, 59);
     }
-    border: 1px solid $light-dark;
+    border: 2px solid $light-dark;
   }
 
   &:invalid {
@@ -80,6 +80,7 @@
 
   &--error {
     &:invalid {
+      border-width: 2px;
       border-color: $field-error;
     }
   }

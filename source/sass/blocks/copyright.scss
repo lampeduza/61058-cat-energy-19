@@ -24,6 +24,10 @@
   width: 41px;
   height: 41px;
 
+  &:hover path {
+    fill: red;
+  }
+
   &:active,
   &:focus {
     opacity: 0.3;
