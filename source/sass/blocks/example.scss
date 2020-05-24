@@ -118,11 +118,13 @@
 }
 
 .example__button {
+  display: block;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+  border-bottom: 1px dotted transparent;
   background-color: $bg-footer;
 
   &--before {
@@ -298,14 +300,19 @@
     margin: 0;
     padding: 6px 0;
     background-color: transparent;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
 
     &:hover {
-      border-bottom: 2px solid #989898;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     }
 
     &--before {
       margin-right: 24px;
+    }
+
+    &:active,
+    &:focus {
+      border: none;
     }
   }
 
