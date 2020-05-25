@@ -250,7 +250,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 170px;
+      top: 165px;
       right: 0;
       bottom: 0;
       left: 0;
@@ -258,7 +258,7 @@
 
     &--before {
       width: 49%;
-      box-shadow: -1000px 1170px 0 1000px #f2f2f2;
+      box-shadow: -1005px 1170px 0 1005px #f2f2f2;
 
       &::after {
         background-color: #f2f2f2;
@@ -266,7 +266,7 @@
     }
 
     &--after {
-      box-shadow: 0 1170px 0 1000px #eaeaea;
+      box-shadow: 0 1170px 0 1005px #eaeaea;
 
       &::after {
         background-color: #eaeaea;
@@ -389,7 +389,7 @@
   }
 
   .example__text {
-    padding-right: 131px;
+    padding-right: 23%;
     margin-bottom: 68px;
   }
 
@@ -421,6 +421,7 @@
     left: 13px;
     margin-bottom: 31px;
   }
+
 
   .example__preview-item {
     position: absolute;
@@ -460,6 +461,7 @@
       }
     }
   }
+
 
   .example__toggle-wrapper {
     top: -32px;

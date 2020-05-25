@@ -396,7 +396,7 @@
   }
 
   .form__info {
-    padding-right: 850px;
+    padding-right: 70%;
   }
 
   .form__wrapper {
@@ -410,10 +410,18 @@
     margin-bottom: 68px;
   }
 
+  .form__top-row .form__item {
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
   .form__item {
     &--basic,
     &--goal {
-      width: 570px;
+      width: 50%;
       margin-bottom: 0;
     }
 
@@ -459,11 +467,12 @@
   .form__item-option {
     &--data {
       margin-bottom: 0;
-      min-width: 570px;
-    }
+      margin-right: 80px;
+      width: 50%;
 
-    &:last-child {
-      margin-right: 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
     }
 
     &--additional-info {

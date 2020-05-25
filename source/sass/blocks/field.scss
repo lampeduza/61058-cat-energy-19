@@ -63,14 +63,14 @@
   &:active,
   &:focus {
     ~ .field__icon {
-      color: rgb(99, 168, 59);
+      fill: rgb(99, 168, 59);
     }
     border: 2px solid $light-dark;
   }
 
   &:invalid {
     ~ .field__icon {
-      color: $field-error;
+      fill: $field-error;
     }
   }
 

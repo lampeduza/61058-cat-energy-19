@@ -18,12 +18,13 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0 auto 164px auto;
-    padding: 0;
+    padding: 0 30px;
     max-width: 708px;
 
     &--form {
+      margin-top: 32px;
       margin-bottom: 36px;
-      padding-top: 32px;
+      padding: 0;
     }
   }
 }
@@ -31,8 +32,10 @@
 @media (min-width: $desktop-width) {
   .page-main__title {
     border: none;
-    max-width: 1220px;
     margin: 0 auto 165px auto;
+    max-width: 1440px;
+    padding: 0 110px;
+
 
     &--form {
       margin-bottom: 37px;

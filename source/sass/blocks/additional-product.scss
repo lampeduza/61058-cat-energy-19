@@ -79,10 +79,10 @@
 @media (min-width: $desktop-width) {
   .additional-product {
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   .additional-product__title {
-    // width: calc(100% - 495px);
     width: 200px;
     margin-right: auto;
   }
