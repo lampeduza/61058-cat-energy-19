@@ -17,6 +17,17 @@
   height: 39px;
 }
 
+.page-header__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__toggle {
   width: 24px;
   height: 19px;
@@ -89,6 +100,7 @@
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
   }
 
   .page-header__top {
@@ -104,15 +116,6 @@
   .page-header__logo-image {
     width: 174px;
     height: 59px;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active,
-    &:focus {
-      opacity: 0.6;
-    }
   }
 
   .page-header__toggle {
@@ -126,7 +129,11 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 55px 0;
+    padding: 54px 0;
+  }
+
+  .page-header__wrapper {
+    padding: 0 40px;
   }
 
   .page-header__logo {

@@ -10,29 +10,27 @@
   <body>
     <!-- header -->
     <header class="page-header page-header--no-js">
-      <div class="container">
-        <div class="page-header__wrapper">
-          <div class="page-header__top">
-            <a class="page-header__logo" href="index.html">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/desktop/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
-                <img class="page-header__logo-image" src="img/mobile/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
-              </picture>
-            </a>
-            <button class="page-header__toggle page-header__toggle--opened" type="button" aria-label="Открыть меню">
-            <span class="page-header__toggle-line"></span>
-            </button>
-          </div>
-          <!-- main navigation -->
-          <nav class="page-header__navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-              <li class="navigation__item navigation__item--active"><a class="navigation__link">Каталог продукции</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
-            </ul>
-          </nav>
+      <div class="page-header__wrapper container">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/desktop/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/mobile/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <button class="page-header__toggle page-header__toggle--opened" type="button" aria-label="Открыть меню">
+          <span class="page-header__toggle-line"></span>
+          </button>
         </div>
+        <!-- main navigation -->
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+            <li class="navigation__item navigation__item--active"><a class="navigation__link">Каталог продукции</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="page-main">
@@ -276,7 +274,7 @@
               <div class="product-more">
                 <h3 class="product-more__title"><a class="product-more__title-link" href="#">Показать еще 100500 товаров</a></h3>
                 <p class="product-more__text">На самом деле вкусов гораздо больше!</p>
-                <a class="product-more__button button" href="#">Показать все</a>
+                <a class="product-more__button button button--secondary" href="#">Показать все</a>
               </div>
             </li>
           </ul>
@@ -352,13 +350,13 @@
         <div class="location__wrapper container">
           <h2 class="visually-hidden">Контактная информация</h2>
           <div class="location__row">
-            <b class="location__slogan">приглашаем<br> к сотрудничеству дилеров!</b>
+            <p class="location__slogan">приглашаем<br> к сотрудничеству дилеров!</p>
             <p class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></p>
           </div>
         </div>
         <!-- map -->
         <div class="location__picture">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2994371256045!2d30.3224049!3d59.938798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy%20Dom%20N.%20A.%20Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1589969184337!5m2!1sen!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="location__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2994371256045!2d30.3224049!3d59.938798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy%20Dom%20N.%20A.%20Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1589969184337!5m2!1sen!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/map/map-pin-desktop@1x.webp 1x, img/map/map-pin-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-pin-tablet@1x.webp 1x, img/map/map-pin-tablet@2x.webp 2x">

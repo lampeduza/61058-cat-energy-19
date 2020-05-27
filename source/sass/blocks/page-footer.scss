@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 32px 0 16px 0;
+  padding: 40px 0 18px 0;
   background-color: $bg-footer;
 }
 
@@ -17,12 +17,12 @@
 .page-footer__logo {
   margin: 0 auto 31px auto;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     opacity: 0.6;
   }
 }
@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 49px;
+    padding-top: 54px;
     padding-bottom: 52px;
   }
 
@@ -67,6 +67,7 @@
 
   .page-footer__social {
     width: 33.33%;
+    padding: 0;
     margin-bottom: 0;
     border-bottom: none;
     border-top: none;
@@ -75,11 +76,14 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 54px;
-    padding-bottom: 52px;
+    padding: 54px 0;
   }
 
   .page-footer__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
+  }
+
+  .page-footer__social {
+    margin-top: -4px;
   }
 }

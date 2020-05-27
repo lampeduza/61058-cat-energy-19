@@ -10,18 +10,27 @@
   text-align: center;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #5eaa2f;
   }
 
-  &:active,
-  &:focus {
+  &:active {
+    background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &:disabled,
-  &--disabled {
+  &--secondary {
     background-color: #ededed;
-    pointer-events: none;
+
+    &:hover,
+    &:focus {
+      background-color: #ededed;
+    }
+
+    &:active {
+      background-color: #ededed;
+      color: rgba($text-color, 0.3);
+    }
   }
 }
