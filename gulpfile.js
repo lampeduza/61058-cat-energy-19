@@ -12,6 +12,8 @@ var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
+var imageminJpegtran = require("imagemin-jpegtran");
+var imageminOptipng = require("imagemin-optipng");
 var webp = require("gulp-webp");
 var del = require("del");
 var server = require("browser-sync").create();
@@ -60,13 +62,12 @@ gulp.task("refresh", function (done) {
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imageminOptipng({optimizationLevel: 3}),
+      imageminJpegtran({quality: 75, progressive: true}),
       imagemin.svgo()
     ]))
 
     .pipe(gulp.dest("build/img"));
-
 });
 
 gulp.task("webp", function () {
