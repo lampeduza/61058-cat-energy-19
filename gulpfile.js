@@ -17,6 +17,8 @@ var imageminOptipng = require("imagemin-optipng");
 var webp = require("gulp-webp");
 var del = require("del");
 var server = require("browser-sync").create();
+const ghPages = require('gh-pages');
+const path = require('path');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
